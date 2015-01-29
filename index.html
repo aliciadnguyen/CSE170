@@ -47,7 +47,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 
-d3.json("flare.json", function(root) {
+d3.json("flare.json", function(error,root) {
   //console.log(error);
   console.log(root);
   var nodes = tree.nodes(root),
