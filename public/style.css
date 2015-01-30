@@ -1,0 +1,32 @@
+
+body {
+  font: 10px sans-serif;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+ul li{
+  border-style: solid;
+  display: block; 
+  color: #fff;
+}
+
+
+.btn-custom{
+	border-color: #fff !important;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+li .project-image{
+	display: inline;
+	width: 150px;
+	height: 150px;
+}
