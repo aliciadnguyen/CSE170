@@ -20,6 +20,8 @@
 
         var pie = d3.layout.pie()
             .sort(null)
+            .startAngle(1.1*Math.PI)
+            .endAngle(3.1*Math.PI)
             .value(function(d) { return d.texts; });
 
         var svg = d3.select("body").append("svg")
@@ -46,9 +48,17 @@
           g.append("path")
               .attr("d", arc)
               .style("fill", function(d) { return color(d.data.mood); })
+              .transition().delay(function(d, i) { return i * 500; }).duration(500)
+                .attrTween('d', function(d) {
+                  var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
+                    return function(t) {
+                    d.endAngle = i(t);
+                    return arc(d);
+                }
+              });
 
          
-          .on("mouseenter", function(d) {
+          g.on("mouseenter", function(d) {
               var total = d3.sum(data.map(function(d) {                // NEW
               return d.texts;                                           // NEW
             })); 
