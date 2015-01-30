@@ -27,10 +27,13 @@ padding-right: 20px;
 
 li .project-image{
 	display: inline;
-	width: 150px;
-	height: 150px;
 }
 
 .glyphicon {
     font-size: 30px;
+}
+#img-responsive {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
