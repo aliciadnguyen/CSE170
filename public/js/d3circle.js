@@ -33,8 +33,8 @@
             .endAngle(3.1*Math.PI)
             .value(function(d) { return d.texts; });
 
-         var svg = d3.select("body")
-          .append("svg")
+         var svg = d3.select("#svgPie")
+            .append("svg")
             .attr("width", '50%')
             .attr("height", '50%')
             .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
