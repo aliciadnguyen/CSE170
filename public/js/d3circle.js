@@ -7,6 +7,12 @@
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
           
+
+         d3.csv("data.csv", function(error, data) {
+            data.forEach(function(d) {
+                d.texts = +d.texts;
+        });  
+          
         var width = 960,
             height = 500,
             radius = Math.min(width, height) / 2;
@@ -24,17 +30,15 @@
             .endAngle(3.1*Math.PI)
             .value(function(d) { return d.texts; });
 
-        var svg = d3.select("body").append("svg")
+        var svg = d3.select("body")
+          .append("svg")
             .attr("width", width)
             .attr("height", height)
           .append("g")
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
         
-        d3.csv("data.csv", function(error, data) {
-            data.forEach(function(d) {
-                d.texts = +d.texts;
-        });
+       
            
 
 
@@ -46,7 +50,6 @@
               .attr("class", "arc")
 
           g.append("path")
-              .attr("d", arc)
               .style("fill", function(d) { return color(d.data.mood); })
               .transition().delay(function(d, i) { return i * 500; }).duration(500)
                 .attrTween('d', function(d) {
@@ -63,7 +66,7 @@
               return d.texts;                                           // NEW
             })); 
 
-               var percent = Math.round(1000 * d.data.texts / total) / 10;
+              var percent = Math.round(1000 * d.data.texts / total) / 10;
               text1 = g.append("text")
                   .attr("translate", arc.centroid(d))
                   .attr("dy", ".5em")
@@ -74,11 +77,11 @@
 
                text2 = g.append("text")
                   .attr("translate", arc.centroid(d))
-                  .attr("dy", "1")
-                  .style("text-anchor", "bottom")
+                  .attr("dy", "25")
+                  .style("text-anchor", "middle")
                   .style("fill", "black")
                   .attr("class", "on")
-                  .text(d.data.texts);   
+                  .text(percent + '%');   
 
 
           })
