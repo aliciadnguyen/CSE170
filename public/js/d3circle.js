@@ -38,16 +38,16 @@
             .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
         
-       
-           
-
-
           var text1;
           var text2;
-          var g = svg.selectAll(".arc")
-              .data(pie(data))
-            .enter().append("g")
-              .attr("class", "arc")
+          var g = svg.selectAll('g')
+            .data(pie(data))
+            .enter()
+            .append('g')
+            .attr('d', "arc")
+            .attr('fill', function(d, i) { 
+              return color(d.data.label); 
+            });
 
           g.append("path")
               .style("fill", function(d) { return color(d.data.mood); })
@@ -61,7 +61,7 @@
               });
 
          
-          g.on("mouseenter", function(d) {
+          g.on("mouseover", function(d) {
               var total = d3.sum(data.map(function(d) {                // NEW
               return d.texts;                                           // NEW
             })); 
