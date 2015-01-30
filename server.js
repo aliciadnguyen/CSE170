@@ -1,5 +1,7 @@
 // server.js
 
+
+    var PORT = 8080;
     // set up ========================
     var express  = require('express');
     var app      = express();                               // create our app w/ express
@@ -12,7 +14,7 @@
 
     //mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu');     // connect to mongoDB database on modulus.io
 
-    app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
+    app.use(express.static(__dirname + '/public'));
     app.use(morgan('dev'));                                         // log every request to the console
     app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
     app.use(bodyParser.json());                                     // parse application/json
@@ -22,11 +24,15 @@
 
 
        // application -------------------------------------------------------------
-    app.get('*', function(req, res) {
+    /*app.get('*', function(req, res) {
         res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end
-    });
+    });*/
+
+
+    var port = process.env.PORT || PORT; // 80 for web, 3000 for development
+app.listen(port, function() {
+    console.log("Node.js server running on port %s", port);
+});
 
   
     // listen (start app with node server.js) ======================================
-    app.listen(8080);
-    console.log("App listening on port 8080");
