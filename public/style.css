@@ -30,3 +30,7 @@ li .project-image{
 	width: 150px;
 	height: 150px;
 }
+
+.glyphicon {
+    font-size: 30px;
+}
