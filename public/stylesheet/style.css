@@ -1,6 +1,7 @@
 
-body {
-  font: 10px sans-serif;
+
+body{
+  padding-top: 70px;
 }
 
 .arc path {
@@ -8,9 +9,7 @@ body {
 }
 
 ul li{
-  border-style: solid;
-  display: block; 
-  color: #fff;
+  display: block;  
 }
 
 
@@ -19,10 +18,13 @@ ul li{
 }
 
 #navlist li
-{
-display: inline;
-list-style-type: none;
-padding-right: 20px;
+{	
+	display: inline;
+	padding-right: 30px;	
+}
+
+#navlist{
+	text-align: center;
 }
 
 li .project-image{
@@ -37,3 +39,8 @@ li .project-image{
     height: auto;
     width: auto\9; /* ie8 */
 }
+
+#svgPie{
+	text-align: center;
+}
+

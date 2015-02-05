@@ -4,34 +4,43 @@
   <head>
     <title>heirarchical graph</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./stylesheet/style.css"> 
+    
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     </head>
     <body ng-app="myApp">
-      <div ng-controller="DropdownCtrl">
-        <div class="btn-group" dropdown is-open="status.isopen">
-          <button type="button" class="btn btn-default dropdown-toggle btn-custom" dropdown-toggle ng-disabled="disabled">
-          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">My <br>Mood</a></li>
-            <li><a href="#">Their <br>Mood</a></li>
-            <li><a href="#">Our <br>Moods</a></li>
-            <li><a href="#">Weekly <br>Breakdown</a></li>
-          </ul>
-        </div>   
-       </div>
+     <div ng-controller="DropdownCtrl">
+      <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-left companylogo" href="#">Company Logo</a>
+                <ul class="nav navbar-nav">
+            <li><a href="#">My Mood</a></li>
+            <li><a href="#">Their Mood</a></li>
+            <li><a href="#">Our Mood</a></li>
+            <li><a href="#">Weekly Breakdown</a></li>
+          </ul> 
+            </div>   
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+ 
       <div id="svgPie"> 
-      <d3-Circle></d3-Circle>
-      </div>   
-<div class="top3">
+        <d3-Circle></d3-Circle>
+      </div>
+
   <ul id="navlist">
-    <li><img class="img-responsive project-image" src="./images/happywink.png" alt="project name" style="max-width:150px" ></li>
-    <li><img class="img-responsive project-image" src="./images/laughhard.png" alt="project name" style="max-width:150px" ></li>
-    <li><img class="img-responsive project-image" src="./images/smirk.png" alt="project name" style="max-width:150px"></li>
+    <li><img class="img-responsive project-image" src="./images/happywink.png" alt="project name" style="max-width:80px;" ></li>
+    <li><img class="img-responsive project-image" src="./images/laughhard.png" alt="project name" style="max-width:80px;" ></li>
+    <li><img class="img-responsive project-image" src="./images/smirk.png" alt="project name" style="max-width:80px;"></li>
   </ul>
 </div>
+
+
 
  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
  <script src="./js/app.js"></script>

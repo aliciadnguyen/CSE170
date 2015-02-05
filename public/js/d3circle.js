@@ -24,8 +24,8 @@
         
 
         var arc = d3.svg.arc()
-            .outerRadius(radius - 10)
-            .innerRadius(radius - 70);
+            .outerRadius(radius - 50)
+            .innerRadius(radius - 20);
 
         var pie = d3.layout.pie()
             .sort(null)
@@ -35,8 +35,8 @@
 
          var svg = d3.select("#svgPie")
             .append("svg")
-            .attr("width", '50%')
-            .attr("height", '50%')
+            .attr("width", '40%')
+            .attr("height", '40%')
             .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
             .attr("preserveAspectRatio", "xMinYMin")
             .append("g")
@@ -76,6 +76,7 @@
               text1 = g.append("text")
                   .attr("translate", arc.centroid(d))
                   .attr("dy", ".5em")
+                  .attr("font-size", "30px")
                   .style("text-anchor", "middle")
                   .style("fill", "black")
                   .attr("class", "on")
@@ -83,7 +84,8 @@
 
                text2 = g.append("text")
                   .attr("translate", arc.centroid(d))
-                  .attr("dy", "25")
+                  .attr("dy", "45")
+                  .attr("font-size", "30px")
                   .style("text-anchor", "middle")
                   .style("fill", "black")
                   .attr("class", "on")
