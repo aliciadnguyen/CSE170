@@ -1,6 +1,6 @@
 CSE 170 Emojilyze App
 
-Contributors: Giovanni, Alicia, Ahn, Ayesha 
+Contributors: Giovanni, Alicia, Anh, Ayesha 
 
 
 
