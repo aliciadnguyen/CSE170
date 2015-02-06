@@ -13,8 +13,9 @@ ul li{
 }
 
 
-.btn-custom{
-	border-color: #fff !important;
+.btn-default{
+	border-color: #222 !important;
+	background-color: #222  !important;
 }
 
 #navlist li
@@ -44,3 +45,7 @@ li .project-image{
 	text-align: center;
 }
 
+.companylogo
+{
+	float:left;
+}
