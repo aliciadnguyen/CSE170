@@ -1,0 +1,29 @@
+<div ng-controller="DropdownCtrl">
+      <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-left companylogo" href="#">Company Logo</a>
+                <ul class="nav navbar-nav">
+            <li><a ui-sref="mymood">My Mood</a></li>
+            <li><a ui-sref="theirmood">Their Mood</a></li>
+            <li><a ui-sref="ourmood">Our Mood</a></li>
+            <li><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
+          </ul> 
+            </div>   
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+ 
+      <div id="svgPie"> 
+        <d3-Circle></d3-Circle>
+      </div>
+
+  <ul id="navlist">
+    <li><img class="img-responsive project-image" src="./images/happywink.png" alt="project name" style="max-width:80px;" ></li>
+    <li><img class="img-responsive project-image" src="./images/laughhard.png" alt="project name" style="max-width:80px;" ></li>
+    <li><img class="img-responsive project-image" src="./images/smirk.png" alt="project name" style="max-width:80px;"></li>
+  </ul>
+</div>
