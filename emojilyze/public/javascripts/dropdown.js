@@ -10,4 +10,25 @@
     $scope.status.isopen = !$scope.status.isopen;
   };
   }]);
+
+
+angular.module('myApp.controllers').controller('defaultSwitch',['$scope',function($scope){
+
+	  $scope.switch = 'off';
+}]);
+
+
+
+angular.module('myApp.controllers').controller('customSwitch',['$scope',function($scope){
+
+	  $scope.switch = 'off';
+}]);
+
+
+
+angular.module('myApp.controllers').controller('privacySwitch',['$scope',function($scope){
+
+	  $scope.switch = 'off';
+}]);
+
 }());
