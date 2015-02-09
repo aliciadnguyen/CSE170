@@ -122,13 +122,37 @@ li .project-image{
 {
 	height:200px;
 	width:200px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+}
+
+.userLabel {
+	font-size:30px;
+	text-align: center;
 }
 
 .emoji1 {
-	height:100px;
-	width:100px;
+	height:110px;
+	width:110px;
 	display: block;
 	margin-right: auto;
+	margin-left: auto;
 }
 
+.emojiLabel {
+	font-size:15px;
+	text-align: center;
+}
+
+.topFour {
+	font-size:30px;
+	text-align: center;
+}
+
+hr
+{
+  background-color: #123455;
+}
 
