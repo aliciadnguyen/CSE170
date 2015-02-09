@@ -18,20 +18,24 @@
 
     	.state('mymood', {
             url: '/my-mood',
-            templateUrl: 'my-mood.html'
+            templateUrl: 'my-mood.html',
         })
         
-        // nested list with custom controller
+       
         .state('theirmood', {
             url: '/their-mood',
             templateUrl: 'their-mood.html',
             
         })
-        
-        // nested list with just some random string data
+      
         .state('ourmood', {
             url: '/our-mood',
-            templateUrl: 'our-mood.html'
+            templateUrl: 'our-mood.html',
+        })
+
+        .state('setup', {
+            url: '/setup',
+            templateUrl: 'setup.html',
         })
 
         .state('weeklybreakdown', {
