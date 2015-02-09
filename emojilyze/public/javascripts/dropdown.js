@@ -32,3 +32,4 @@ angular.module('myApp.controllers').controller('privacySwitch',['$scope',functio
 }]);
 
 }());
+

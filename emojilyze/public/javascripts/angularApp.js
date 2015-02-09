@@ -42,6 +42,12 @@
             url: '/weekly-breakdown',
             templateUrl: 'weekly-breakdown.html',
             
+        })
+
+        .state('sorting', {
+            url: '/sorting',
+            templateUrl: 'sorting.html',
+            
         });
 
   });
