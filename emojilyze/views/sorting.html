@@ -29,25 +29,48 @@
 
     <div class="jumbotron text-center">
     <h1>Emoji Sorting</h1>
-
-
     </div>
-
+    <div class="instructions">
+        Instructions: Please select one of our default categories or input your own!
+    </div>
+        <br>
     <div class="container-fluid sortContainer">
     <img class="sortImage" src="/images/angry.png">
 
-    <div class="dropdown category-dropdown">
-      <button class="btn dropdown-toggle categoryBtn" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-        Angry
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Angry</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sad</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Flirty</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Silly</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Happy</a></li>
-      </ul>
+    <div class="chooseLabel">
+        Choose a Category: 
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="dropdown category-dropdown ">
+          <button class="categoryBtn btn dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" font-size="20px" >
+            <span style="font-size:20px">Angry</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Angry</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sad</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Flirty</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Silly</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Happy</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="customCategoryForm">
+        Custom Category: <br> 
+        <form id="customForm">
+            <div class="formLabel">
+                <input type="text" name="customCategory">
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
     </div>
 
     </div>

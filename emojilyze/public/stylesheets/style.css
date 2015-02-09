@@ -65,13 +65,14 @@ li .project-image{
 
 .category-dropdown 
 {
-	width:10%;
+	width:200px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .categoryBtn 
 {
+	font-size: 20px;
 	background-color: #ffd031;
 }
 
@@ -87,6 +88,52 @@ li .project-image{
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.customCategoryForm 
+{
+	width:50%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 30px;
+	text-align: center;
+}
+
+.chooseLabel
+{
+	text-align: center;
+	font-size: 30px;
+}
+
+#customForm 
+{
+	font-size: 20px;
+}
+
+.formLabel
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+.instructions 
+{
+	text-align: center;
+	font-size: 20px;
+}
+
+.userIcon
+{
+	height:200px;
+	width:200px;
+}
+
+.emoji1 {
+	height:100px;
+	width:100px;
+	display: block;
+	margin-right: auto;
+}
+
 
 
 
