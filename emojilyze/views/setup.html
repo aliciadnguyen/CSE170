@@ -19,52 +19,41 @@
 
   <!-- Standard Switch -->
   
- <form ng-controller="defaultSwitch">
-          
+ <form ng-controller="defaultSwitch" class="sliders">
+     <p class="sliderlabler">Default</p> 
     <div class="toggle-bg toggle-alternate {{switchAlternate}}">
-
       <label class="{{switchAlternate}}">{{switchAlternate}}</label>
       <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
       <input type="radio" name="toggle" value="on" ng-model="switchAlternate">
       <span class="switch {{switchAlternate}}"></span>
-
-    </div>
-        
-    <p><strong>State</strong>: {{switchAlternate}}</p>
-          
+    </div>          
   </form>
       
   <!-- Alternative Switch -->
       
-  <form ng-controller="customSwitch">
-          
+  <form ng-controller="customSwitch" class="sliders">
+      <p class="sliderlabler">Custom</p>    
     <div class="toggle-bg toggle-alternate {{switchAlternate}}">
+      <label class="{{switchAlternate}}">{{switchAlternate}}</label>
+      <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
+      <input type="radio" name="toggle" value="on" ng-model="switchAlternate">
+      <span class="switch {{switchAlternate}}"></span>
+    </div>       
+  </form>
 
+
+  <form ng-controller="privacySwitch" class="sliders">
+        <p class="sliderlabler">Privacy</p>         
+    <div class="toggle-bg toggle-alternate {{switchAlternate}}">
       <label class="{{switchAlternate}}">{{switchAlternate}}</label>
       <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
       <input type="radio" name="toggle" value="on" ng-model="switchAlternate">
       <span class="switch {{switchAlternate}}"></span>
 
     </div>
-        
-    <p><strong>State</strong>: {{switchAlternate}}</p>
+
           
   </form>
 
 
-
-  <form ng-controller="privacySwitch">
-          
-    <div class="toggle-bg toggle-alternate {{switchAlternate}}">
-
-      <label class="{{switchAlternate}}">{{switchAlternate}}</label>
-      <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
-      <input type="radio" name="toggle" value="on" ng-model="switchAlternate">
-      <span class="switch {{switchAlternate}}"></span>
-
-    </div>
-        
-    <p><strong>State</strong>: {{switchAlternate}}</p>
-          
-  </form>
         
