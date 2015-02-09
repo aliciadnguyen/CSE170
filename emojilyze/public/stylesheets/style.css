@@ -13,15 +13,9 @@ ul li{
 }
 
 
-.btn-default{
-	border-color: #222 !important;
-	background-color: #222  !important;
-}
-
 #emojilist li
 {	
 	display: inline;
-	padding-right: 30px;	
 }
 
 #emojilist{
@@ -46,10 +40,21 @@ li .project-image{
     width: auto\9; /* ie8 */
 }
 
-#svgPie{
-	text-align: center;
+.moodGraphContainer {
+	width: auto;
+	height: auto;
 }
 
+#svgPie{
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
 .companylogo
 {
 	float:left;
@@ -57,8 +62,13 @@ li .project-image{
 
 .graph-key-bar 
 {
+	display:block;
 	width:100%;
 	height:50px;
 	background-color: #abcabc;
 	margin-bottom: 10px;
+}
+
+.pageTitle {
+	text-align: center;
 }
