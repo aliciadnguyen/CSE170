@@ -1,5 +1,7 @@
 
-
+body{
+	padding-top: 70px;
+}
 
 .arc path {
   stroke: #fff;
@@ -51,7 +53,6 @@ li .project-image{
 {
 	float:left;
 }
-<<<<<<< Updated upstream
 
 .graph-key-bar 
 {
