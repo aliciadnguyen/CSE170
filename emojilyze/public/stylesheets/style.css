@@ -14,6 +14,9 @@ ul li{
   display: block;  
 }
 
+.textCenter {
+  text-align: center;
+}
 
 #emojilist li
 {	
@@ -22,6 +25,7 @@ ul li{
 
 #emojilist{
 	text-align: center;
+  padding-left: 0px;
 }
 
 li .project-image{
@@ -33,7 +37,7 @@ li .project-image{
 }
 
 .medium-emoji {
-	width: 80px;
+	width: 70px;
 }
 
 .img-responsive {
@@ -85,6 +89,10 @@ li .project-image{
 	width:200px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.dropdown-menu {
+  width:200px;
 }
 
 .categoryBtn 
