@@ -76,6 +76,10 @@ li .project-image{
 	text-align: center;
 }
 
+.pageTitleBar {
+  padding: 10px;
+}
+
 .category-dropdown 
 {
 	width:200px;
@@ -338,6 +342,23 @@ hr
 	right:-20px;
 }
 
+
 #orLabel {
   text-align: center;
 }
+
+.setupContainer {
+  position: relative;
+}
+
+.sortingButton {
+  position: absolute;
+  float: left;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.privacySwitch {
+  margin-top: 70px;
+}
+
