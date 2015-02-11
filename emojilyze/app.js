@@ -10,6 +10,7 @@ var bodyParser = require('body-parser');
 //mongoose.connect('mongodb://localhost/emojilyze');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var their_Mood = require('./routes/their-mood');
 
 var app = express();
 
@@ -43,7 +44,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse applica
 
 app.use('/', routes);
 app.use('/users', users);
-
+app.use('/their-mood', their_Mood);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');

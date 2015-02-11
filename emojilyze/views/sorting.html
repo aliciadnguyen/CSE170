@@ -35,12 +35,13 @@
     </div>
         <br>
     <div class="container-fluid sortContainer">
-    <img class="sortImage" src="/images/angry.png">
-
+        <div class="sortImage">
+            <img class="sortImage" src="/images/angry.png">
+        </div>
     <div class="chooseLabel">
         Choose a Category: 
     </div>
-    <br>
+    
 
     <div class="row">
         <div class="dropdown category-dropdown ">
@@ -58,16 +59,20 @@
         </div>
     </div>
 
-    <br><br>
+    <br>
+    <div id="orLabel">
+        <p> ----- OR ----- </p>
+    </div>
 
     <div class="customCategoryForm">
         Custom Category: <br> 
         <form id="customForm">
-            <div class="formLabel">
-                <input type="text" name="customCategory">
+            <div >
+                <input class="formLabel" type="text" name="customCategory">
             </div>
+
             <div>
-                <input type="submit" value="Submit">
+                <input class="submitButton" type="submit" value="Submit">
             </div>
             
         </form>
