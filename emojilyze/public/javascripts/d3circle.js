@@ -7,7 +7,7 @@
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
           
-         d3.csv("data.csv", function(error, data) {
+         d3.json("data.json", function(error, data) {
             data.forEach(function(d) {
                 d.texts = +d.texts;
         });  

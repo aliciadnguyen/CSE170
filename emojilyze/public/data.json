@@ -1,0 +1,22 @@
+[
+  {
+    "mood":"Happy",
+    "texts":2704659
+  },
+  {
+    "mood":"Sad",
+    "texts":4499890
+  },
+  {
+    "mood":"Laughter",
+    "texts":2159981
+  },
+  {
+    "mood":"Smirk",
+    "texts":3853788
+  },
+  {
+    "mood":"Flirty",
+    "texts":14106543
+  }
+]
