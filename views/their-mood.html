@@ -36,92 +36,29 @@
     <br>
 
   <div ng-controller="theirmoodCtrl">  
-    <div class="userImage row">
+    <div class="userImage row" ng-repeat="friend in friends">
+        <br>
+        <hr>
         <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" ng-src="/{{friends[0].image}}"/>
+            <img class="userIcon" ng-src="/{{friend.image}}"/>
                 <div class="userLabel">
-                    {{friends[0].name}}
+                    {{friend.name}}
                 </div>
         </div>
         <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+            <img class="emoji1" ng-src="{{friend.emoji[0].emoji1.imageSRC}}">
         </div>
         <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">        </div>
+            <img class="emoji1" ng-src="{{friend.emoji[0].emoji2.imageSRC}}">        </div>
         <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+            <img class="emoji1" ng-src="{{friend.emoji[0].emoji3.imageSRC}}">
         </div>
         <div class="col-xs-6 col-sm-4">
-           <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
-        </div>
+           <img class="emoji1" ng-src="{{friend.emoji[0].emoji4.imageSRC}}">
+        </div>   
     </div>
-    <hr>
-    <br>
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" ng-src="/{{friends[1].image}}"/>
-                <div class="userLabel">
-                    {{friends[1].name}}
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji1.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji2.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji3.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji4.imageSRC}}">
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" ng-src="/{{friends[2].image}}"/>
-                <div class="userLabel">
-                    {{friends[2].name}}
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji1.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji2.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji3.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji4.imageSRC}}">
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" ng-src="/{{friends[3].image}}"/>
-                <div class="userLabel">
-                    {{friends[3].name}}
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji1.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji2.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji3.imageSRC}}">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji4.imageSRC}}">
-        </div>
-    </div>
-</div>
+  </div>  
+   
 
 
 
