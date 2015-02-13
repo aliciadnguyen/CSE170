@@ -1,0 +1,89 @@
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand companylogo" ui-sref="mymood">Company Logo</a> 
+
+            </div>   
+            <!-- /.navbar-collapse -->
+            <div class="navbar-collapse collapse"> 
+              <ul class="nav navbar-nav navbar-left">
+                <li ><a ui-sref="mymood">My Mood</a></li>
+                <li><a ui-sref="theirmood">Their Mood</a></li>
+                <li><a ui-sref="ourmood">Our Mood</a></li>
+                <li><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
+                <li class="active"><a ui-sref="setup">Setup</a></li>
+              </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <div class="jumbotron text-center pageTitleBar">
+    <h4>Emoji Sorting</h4>
+    </div>
+    <div class="instructions">
+        Instructions: Please select one of our default categories or input your own!
+    </div>
+        <br>
+    <div class="container-fluid sortContainer">
+        <div class="sortImage">
+            <img class="sortImage" id="emojiImage" src="/images/teethEmoji.png">
+        </div>
+    <div class="chooseLabel">
+        Choose a Category: 
+    </div>
+    
+
+    <div class="row">
+        <div class="dropdown category-dropdown" ng-controller="SortingCtrl">
+          <button class="categoryBtn btn dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" font-size="20px" >
+            <span style="font-size:20px">Happy</span>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Angry</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Sad</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Flirty</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Silly</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Happy</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <br>
+    <div id="orLabel">
+        <p> ----- OR ----- </p>
+    </div>
+
+    <div class="customCategoryForm">
+        Custom Category: <br> 
+        <form id="customForm">
+            <div >
+                <input class="formLabel" id="customCategory" type="text">
+            </div>
+        </form>
+
+            <div ng-controller="SortingCtrl">
+                <button class="btn btn-success submitButton" ng-click="submitCategory()">Submit</button>
+            </div>
+    </div>
+
+    </div>
+
+
+
+    
+
+
+
+
+
+
