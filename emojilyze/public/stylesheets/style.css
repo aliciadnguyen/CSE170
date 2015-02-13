@@ -115,6 +115,12 @@ li .project-image{
 	margin-left: auto;
 }
 
+#emojiImage 
+{
+  width: auto;
+  height: auto;
+}
+
 .customCategoryForm 
 {
 	

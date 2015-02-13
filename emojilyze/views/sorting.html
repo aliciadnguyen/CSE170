@@ -26,7 +26,6 @@
     </nav>
 
 
-
     <div class="jumbotron text-center pageTitleBar">
     <h4>Emoji Sorting</h4>
     </div>
@@ -36,7 +35,7 @@
         <br>
     <div class="container-fluid sortContainer">
         <div class="sortImage">
-            <img class="sortImage" src="/images/angry.png">
+            <img class="sortImage" id="emojiImage" src="/images/teethEmoji.png">
         </div>
     <div class="chooseLabel">
         Choose a Category: 
@@ -44,9 +43,9 @@
     
 
     <div class="row">
-        <div class="dropdown category-dropdown ">
+        <div class="dropdown category-dropdown" ng-controller="SortingCtrl">
           <button class="categoryBtn btn dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true" font-size="20px" >
-            <span style="font-size:20px">Angry</span>
+            <span style="font-size:20px">Happy</span>
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -68,17 +67,18 @@
         Custom Category: <br> 
         <form id="customForm">
             <div >
-                <input class="formLabel" type="text" name="customCategory">
+                <input class="formLabel" id="customCategory" type="text">
             </div>
-
-            <div>
-                <input class="submitButton" type="submit" value="Submit">
-            </div>
-            
         </form>
+
+            <div ng-controller="SortingCtrl">
+                <button class="btn btn-success submitButton" ng-click="submitCategory()">Submit</button>
+            </div>
     </div>
 
     </div>
+
+
 
     
 
