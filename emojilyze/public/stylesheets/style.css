@@ -370,3 +370,14 @@ hr
   margin-top: 70px;
 }
 
+/* Bar Graoh */
+#chart {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graphName{
+  float: none;
+  text-align: center;
+  width: 100%;
+}
