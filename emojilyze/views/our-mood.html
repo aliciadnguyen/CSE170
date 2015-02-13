@@ -30,19 +30,20 @@
     <h4>Our Mood</h4>
     </div>
 
+  <div ng-controller="theirmoodCtrl">   
     <div class="userImage row">
         <div class="col-md-6">
-            <img class="userIcon" src="/images/ayeshaIcon.png">
+            <img class="userIcon" ng-src="/{{friends[0].image}}"/>
               <br>
               <div class="userLabel">
-                Ayesha
+                {{friends[0].name}}
               </div>
         </div>
         <div class="col-md-6">
-            <img class="userIcon" src="/images/anhIcon.png">
+            <img class="userIcon" ng-src="/{{friends[1].image}}"/>
             <br>
             <div class="userLabel">
-              Anh
+              {{friends[1].name}}
             </div>
         </div>
     </div>
@@ -50,35 +51,18 @@
         <br>
     <div class="userImage row">
         <div class="col-md-6">
-            <img class="userIcon" src="/images/gioIcon.png">
+            <img class="userIcon" ng-src="/{{friends[2].image}}"/>
             <br>
             <div class="userLabel">
-              Gio
+              {{friends[2].name}}
             </div>
         </div>
         <div class="col-md-6">
-            <img class="userIcon" src="/images/aliciaIcon.png">
+            <img class="userIcon" ng-src="/{{friends[3].image}}"/>
             <br>
             <div class="userLabel">
-              Alicia
+              {{friends[3].name}}
             </div>
         </div>
     </div>
-      <br>
-      <br>
-    <div class="userImage row">
-        <div class="col-md-6">
-            <img class="userIcon" src="/images/banksIcon.png">
-            <br>
-            <div class="userLabel">
-              Banks
-            </div>
-        </div>
-        <div class="col-md-6">
-            <img class="userIcon" src="/images/angusIcon.png">
-            <br>
-            <div class="userLabel">
-              Angus
-            </div>
-        </div>
-    </div>
+  </div>
