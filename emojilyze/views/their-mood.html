@@ -34,30 +34,94 @@
      Your friend's top four emojis: 
     </div>
     <br>
-    {{#each friend}}
+
+  <div ng-controller="theirmoodCtrl">  
     <div class="userImage row">
         <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" src={{image}}>
+            <img class="userIcon" ng-src="/{{friends[0].image}}"/>
                 <div class="userLabel">
-                    {{name}}
+                    {{friends[0].name}}
                 </div>
-       <!--     {{#each emoji}}
-                <div class="col-xs-6 col-sm-4">
-                    <img class="emoji1" src={{imageSRC}}>
-                    <div class="categoryLabel">
-                        {{category}} -- {{percentage}}
-                    </div>
-                </div>
-            {{/each}} -->
         </div>
-    </div>  
-    {{/each}}
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+           <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[1].image}}"/>
+                <div class="userLabel">
+                    {{friends[1].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji2.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[2].image}}"/>
+                <div class="userLabel">
+                    {{friends[2].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji2.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[3].image}}"/>
+                <div class="userLabel">
+                    {{friends[3].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji2.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-    <script src="/javascripts/jquery-1.11.0.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>    
-    <script src="/javascripts/friend.js"></script>
-  
+
 
