@@ -34,91 +34,92 @@
      Your friend's top four emojis: 
     </div>
     <br>
+  <div ng-controller="theirmoodCtrl">  
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[0].image}}"/>
+                <div class="userLabel">
+                    {{friends[0].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+           <img class="emoji1" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[1].image}}"/>
+                <div class="userLabel">
+                    {{friends[1].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji2.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[1].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[2].image}}"/>
+                <div class="userLabel">
+                    {{friends[2].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji2.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[2].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="userImage row">
+        <div class="col-xs-6 col-sm-4">
+            <img class="userIcon" ng-src="/{{friends[3].image}}"/>
+                <div class="userLabel">
+                    {{friends[3].name}}
+                </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji1.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji2.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji3.imageSRC}}">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <img class="emoji1" ng-src="{{friends[3].emoji[0].emoji4.imageSRC}}">
+        </div>
+    </div>
+</div>
 
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" src="/images/userIcon.png">
-                <div class="userLabel">
-                    User 1
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/angry.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/sigh.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/smirk.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/happywink.png">
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" src="/images/userIcon.png">
-                <div class="userLabel">
-                    User 2
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/tongue.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/sigh.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/happywink.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/laughhard.png">
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" src="/images/userIcon.png">
-                <div class="userLabel">
-                    User 3
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/XXeyes.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/awkwardLaugh.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/angry.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/cry.png">
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="userImage row">
-        <div class="col-xs-6 col-sm-4">
-            <img class="userIcon" src="/images/userIcon.png">
-                <div class="userLabel">
-                    User 4
-                </div>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/sunglasses.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/tongue.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/sigh.png">
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <img class="emoji1" src="/images/awkwardLaugh.png">
-        </div>
-    </div>
 

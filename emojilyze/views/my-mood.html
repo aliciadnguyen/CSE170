@@ -37,10 +37,10 @@
       <div class = "graph-key-bar">
       </div>
 
+    <div ng-controller="mymoodCtrl">
       <ul id="emojilist">
-        <li><img class="img-responsive project-image medium-emoji" src="./images/happywink.png" alt="project name" ></li>
-        <li><img class="img-responsive project-image medium-emoji" src="./images/laughhard.png" alt="project name" ></li>
-        <li><img class="img-responsive project-image medium-emoji" src="./images/smirk.png" alt="project name" ></li>
+        <li ng-repeat= "mymood in mymoods | filter: { defaultCategory: 'Happy' }">
+          <img class="img-responsive project-image medium-emoji"  ng-src="/{{mymood.imageSRC}}"/>
       </ul>
     </div>
 

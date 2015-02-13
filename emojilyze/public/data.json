@@ -1,22 +1,23 @@
 [
-  {
-    "mood":"Happy",
-    "texts":2704659
-  },
-  {
-    "mood":"Sad",
-    "texts":4499890
-  },
-  {
-    "mood":"Laughter",
-    "texts":2159981
-  },
-  {
-    "mood":"Smirk",
-    "texts":3853788
-  },
-  {
-    "mood":"Flirty",
-    "texts":14106543
-  }
-]
+
+      {
+        "defaultCategory":"Happy",
+        "timesUsed":2704659
+      },
+      {
+        "defaultCategory":"Sad",
+        "timesUsed":4499890
+      },
+      {
+        "defaultCategory":"Laughter",
+        "timesUsed":2159981
+      },
+      {
+        "defaultCategory":"Smirk",
+        "timesUsed":3853788
+      },
+      {
+        "defaultCategory":"Flirty",
+        "timesUsed":14106543
+      }
+    ]  
