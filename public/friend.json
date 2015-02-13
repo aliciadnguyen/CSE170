@@ -1,0 +1,133 @@
+[
+		{
+        "name": "Ayesha Mazumdar",
+        "image": "images/ayeshaIcon.png",
+        "emoji": [
+            {
+                "emoji1": {
+                    "category": "Angry",
+                    "imageSRC": "images/angry.png",
+                    "percentage": "40%"
+                },
+                "emoji2": {
+                    "category": "Happy",
+                    "imageSRC": "images/happywink.png",
+                    "percentage": "66%"
+                },
+                "emoji3": {
+                    "category": "Indifferent",
+                    "imageSRC": "images/sigh.png",
+                    "percentage": "35%"
+                },
+                "emoji4": {
+                    "category": "Flirty",
+                    "imageSRC": "images/smirk.png",
+                    "percentage": "75%"
+                }
+            }
+        ]
+    },
+		{
+			"name": "Anh Tran",
+			"image": "images/anhIcon.png",
+			"emoji": [
+				{
+					"emoji1": 
+						{
+							"category": "Silly",
+							"imageSRC": "images/tongue.png",
+							"percentage": "80%"
+						}
+					,
+					"emoji2": 
+						{
+							"category": "Indifferent",
+							"imageSRC": "images/sigh.png",
+							"percentage": "43%"
+						}
+					,
+					"emoji3": 
+						{
+							"category": "Happy",
+							"imageSRC": "images/happywink.png",
+							"percentage": "78%"
+						}
+					,
+					"emoji4": 
+						{
+							"category": "Ecstatic",
+							"imageSRC": "images/laughhard.png",
+							"percentage": "88%"
+						}
+				}
+			]
+		},{
+			"name": "Gio Wong",
+			"image": "images/gioIcon.png",
+			"emoji": [
+				{
+					"emoji1": 
+						{
+							"category": "Exhausted",
+							"imageSRC": "images/XXeyes.png",
+							"percentage": "42%"
+						}
+					,
+					"emoji2": 
+						{
+							"category": "Silly",
+							"imageSRC": "images/awkwardLaugh.png",
+							"percentage": "67%"
+						}
+					,
+					"emoji3": 
+						{
+							"category": "Sad",
+							"imageSRC": "images/cry.png",
+							"percentage": "35%"
+						}
+					,
+					"emoji4": 
+						{
+							"category": "Angry",
+							"imageSRC": "images/angry.png",
+							"percentage": "55%"
+						}
+				}
+			]
+		},{
+			"name": "Alicia Nguyen",
+			"image": "images/aliciaIcon.png",
+			"emoji": [
+				{
+					"emoji1": 
+						{
+							"category": "Relaxed",
+							"imageSRC": "images/sunglasses.png",
+							"percentage": "46%"
+						}
+					,
+					"emoji2": 
+						{
+							"category": "Silly",
+							"imageSRC": "images/tongue.png",
+							"percentage": "33%"
+						}
+					,
+					"emoji3": 
+						{
+							"category": "Indifferent",
+							"imageSRC": "images/sigh.png",
+							"percentage": "97%"
+						}
+					,
+					"emoji4": 
+						{
+							"category": "Happy",
+							"imageSRC": "images/awkwardLaugh.png",
+							"percentage": "68%"
+						}
+				}
+			]
+		}
+	]
