@@ -30,12 +30,33 @@
     <h4>Their Mood</h4>
     </div>
 
+
+  <div ng-controller="theirmoodCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Add Friend</h3>
+        </div>
+        <div class="modal-body">
+            <form novalidate class="simple-form">
+                Name: <input type="text" ng-model="user.name" /><br />
+              </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" input type="submit" ng-click="ok(user)">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <button class="btn btn-default" ng-click="open()">Add Friend</button>
+
+
+
     <div class="topFour">
      Your friend's top four emojis: 
     </div>
     <br>
 
-  <div ng-controller="theirmoodCtrl">  
+   
     <div class="userImage row" ng-repeat="friend in friends">
         <br>
         <hr>
@@ -58,7 +79,7 @@
         </div>   
     </div>
   </div>  
-   
+
 
 
 

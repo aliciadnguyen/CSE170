@@ -44,7 +44,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse applica
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/their-mood', their_Mood);
+app.use('/their-mood', their_Mood.theirMood);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
