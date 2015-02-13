@@ -14,6 +14,9 @@ ul li{
   display: block;  
 }
 
+.textCenter {
+  text-align: center;
+}
 
 #emojilist li
 {	
@@ -22,6 +25,7 @@ ul li{
 
 #emojilist{
 	text-align: center;
+  padding-left: 0px;
 }
 
 li .project-image{
@@ -33,7 +37,7 @@ li .project-image{
 }
 
 .medium-emoji {
-	width: 80px;
+	width: 70px;
 }
 
 .img-responsive {
@@ -87,8 +91,13 @@ li .project-image{
 	margin-left: auto;
 }
 
+.dropdown-menu {
+  width:200px;
+}
+
 .categoryBtn 
 {
+  margin-top: 10px;
 	font-size: 20px;
 	background-color: #ffd031;
 }
@@ -108,17 +117,21 @@ li .project-image{
 
 .customCategoryForm 
 {
-	width:50%;
+	
 	margin-right: auto;
 	margin-left: auto;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
+  max-height:100%;
+  max-width:100%;
 }
 
 .chooseLabel
 {
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
+  max-height:100%;
+  max-width:100%;
 }
 
 #customForm 
@@ -128,8 +141,7 @@ li .project-image{
 
 .formLabel
 {
-	text-align: center;
-	font-size: 20px;
+  margin-top: 10px;
 }
 
 .instructions 
@@ -174,6 +186,17 @@ li .project-image{
 hr
 {
   background-color: #123455;
+}
+
+.sortImage {
+  margin-left: auto;
+  margin-right: auto;
+  max-height:100%;
+  max-width:100%;
+}
+
+.submitButton {
+  margin-top: 10px;
 }
 
 ============================
@@ -327,6 +350,11 @@ hr
 	right:-20px;
 }
 
+
+#orLabel {
+  text-align: center;
+}
+
 .setupContainer {
   position: relative;
 }
@@ -341,3 +369,4 @@ hr
 .privacySwitch {
   margin-top: 70px;
 }
+

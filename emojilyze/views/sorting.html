@@ -35,12 +35,13 @@
     </div>
         <br>
     <div class="container-fluid sortContainer">
-    <img class="sortImage" src="/images/angry.png">
-
+        <div class="sortImage">
+            <img class="sortImage" src="/images/angry.png">
+        </div>
     <div class="chooseLabel">
         Choose a Category: 
     </div>
-    <br>
+    
 
     <div class="row">
         <div class="dropdown category-dropdown ">
@@ -49,25 +50,29 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Angry</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sad</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Flirty</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Silly</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Happy</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Angry</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Sad</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Flirty</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Silly</a></li>
+            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Happy</a></li>
           </ul>
         </div>
     </div>
 
-    <br><br>
+    <br>
+    <div id="orLabel">
+        <p> ----- OR ----- </p>
+    </div>
 
     <div class="customCategoryForm">
         Custom Category: <br> 
         <form id="customForm">
-            <div class="formLabel">
-                <input type="text" name="customCategory">
+            <div >
+                <input class="formLabel" type="text" name="customCategory">
             </div>
+
             <div>
-                <input type="submit" value="Submit">
+                <input class="submitButton" type="submit" value="Submit">
             </div>
             
         </form>
