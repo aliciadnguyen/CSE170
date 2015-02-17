@@ -4,13 +4,20 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-//var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
 
-//mongoose.connect('mongodb://localhost/emojilyze');
+mongoose.connect('mongodb://localhost/emojilyze');
+
+
+
+require('./models/myMoods');
+//require('./models/theirMoods');
+
+
 var routes = require('./routes/index');
-var users = require('./routes/users');
-var their_Mood = require('./routes/their-mood');
+//var users = require('./routes/users');
+
 
 var app = express();
 
@@ -33,8 +40,8 @@ res.sendFile('/views/index.ejs'); // load the single view file (angular will han
 
 //app.use(express.static(__dirname + '/public'));
 //app.use(morgan('dev'));                                         // log every request to the console
-app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
-app.use(bodyParser.json());                                     // parse application/json
+//app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
+//app.use(bodyParser.json());                                     // parse application/json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 //app.use(methodOverride());
 
@@ -43,8 +50,8 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse applica
 
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/their-mood', their_Mood.theirMood);
+//app.use('/users', users);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');

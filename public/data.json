@@ -1,4 +1,7 @@
-[
+{
+  "mymood":
+
+    [
 
       {
         "defaultCategory":"Happy",
@@ -21,3 +24,4 @@
         "timesUsed":14106543
       }
     ]  
+}

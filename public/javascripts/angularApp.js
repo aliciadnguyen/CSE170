@@ -9,8 +9,8 @@
   // setup dependency injection
   angular.module('d3', []);
   angular.module('myApp.directives', ['d3']);
-  angular.module('myApp.controllers',['ui.bootstrap','ui.router']).config(function($stateProvider, $urlRouterProvider){
-    
+  angular.module('myApp.controllers',['ui.bootstrap','ui.router']).config(['$stateProvider','$urlRouterProvider','$locationProvider',function($stateProvider, $urlRouterProvider,$locationProvider){
+
   	$urlRouterProvider.otherwise('/my-mood');
 
 
@@ -19,6 +19,12 @@
     	.state('mymood', {
             url: '/my-mood',
             templateUrl: 'my-mood.html',
+            controller:'mymoodCtrl',
+            resolve:{
+              myMoodPromise: ['mmood',function (moods) {
+                  return moods.getAll();
+            }]
+          }
         })
         
        
@@ -50,7 +56,7 @@
             
         });
 
-  });
+  }]);
 
 
   

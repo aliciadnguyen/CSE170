@@ -1,4 +1,5 @@
 [
+	
 				{
 					"name": "teethEmoji",
 					"defaultCategory": "Happy",
@@ -41,5 +42,5 @@
 					"imageSRC": "images/laughhard.png",
 					"timesUsed": "1"
 				}
-
+	
 ]

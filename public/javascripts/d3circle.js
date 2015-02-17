@@ -10,7 +10,7 @@
          d3.json("data.json", function(data) {
               
 
-              data.forEach(function(d) {
+              data.mymood.forEach(function(d) {
                 d.timesUsed += d.timesUsed;
         });  
           
@@ -50,7 +50,7 @@
           var text2;
          
           var g = svg.selectAll('g')
-            .data(pie(data))
+            .data(pie(data.mymood))
             .enter()
             .append("g")
             .attr("d", "arc")
@@ -71,7 +71,7 @@
 
          
           g.on("mouseover", function(d) {
-              var total = d3.sum(data.map(function(d) {                // NEW
+              var total = d3.sum(data.mymood.map(function(d) {                // NEW
               return d.timesUsed;                                           // NEW
             })); 
 
