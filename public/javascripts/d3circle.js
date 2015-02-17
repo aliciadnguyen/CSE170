@@ -6,61 +6,89 @@
       return {
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
-          
-         d3.json("data.json", function(data) {
-              
-
-              data.mymood.forEach(function(d) {
-                d.timesUsed += d.timesUsed;
-        });  
          
-        var legendRectSize = 18;                                  
-        var legendSpacing = 4;                                      
-        var width = (window.innerWidth < 1280) ? 400 : 600,
+       var width = (window.innerWidth < 1280) ? 400 : 600,
         height = (window.innerWidth < 1280) ? 400 : 500,
         radius = Math.min(width, height) / 2;
-
-
-        var color = d3.scale.ordinal()
-            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"]);
-
-
+        var legendRectSize = 18;
+        var legendSpacing = 4;
         
 
-        var arc = d3.svg.arc()
-            .outerRadius(radius - 100)
-            .innerRadius(radius - 20);
+        var color = d3.scale.category20b();
+        
 
-        var pie = d3.layout.pie()
-            .sort(null)
-            .startAngle(1.1*Math.PI)
-            .endAngle(3.1*Math.PI)
-            .value(function(d) { return d.timesUsed; });
 
-         var svg = d3.select("#svgPie")
+        var svg = d3.select('#svgPie')
             .append("svg")
             .attr("width", '100%')
             .attr("height", '100%')
             .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
             .attr("preserveAspectRatio", "xMinYMin")
             .append("g")
-            .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");
-
-
+            .attr("transform", "translate(" + Math.min(width,height) / 2 + "," + Math.min(width,height) / 2 + ")");      
         
-          var text1;
-          var text2;
-         
-          var g = svg.selectAll('g')
+
+        var arc = d3.svg.arc()
+            .outerRadius(radius - 100)
+            .innerRadius(radius - 20);
+        
+
+        var pie = d3.layout.pie()
+          .startAngle(1.1*Math.PI)
+          .endAngle(3.1*Math.PI)
+          .sort(null)
+          .value(function(d) { return d.timesUsed; });
+        
+
+        var toolTip = d3.select('#svgPie')
+          .append('div')
+          .attr('class', 'toolTip');
+          toolTip.append('div')
+          .attr('class', 'defaultCategory');
+          toolTip.append('div')
+          .attr('class', 'timesUsed');
+          toolTip.append('div')
+          .attr('class', 'percent');
+        
+
+        d3.json('data.json', function(error, data) {
+          data.mymood.forEach(function(d) {
+            d.timesUsed = +d.timesUsed;
+            d.enabled = true;                                         // NEW
+          });
+          
+          var path = svg.selectAll('path')
             .data(pie(data.mymood))
             .enter()
-            .append("g")
-            .attr("d", "arc")
+            .append('path')
+            .attr('d', arc)
             .attr('fill', function(d, i) { 
               return color(d.data.defaultCategory); 
-            });
+            })                                                        // UPDATED (removed semicolon)
+            .each(function(d) { this._current = d; });                // NEW
+          
 
-          g.append("path")
+          path.on('mouseover', function(d) {
+            var total = d3.sum(data.mymood.map(function(d) {
+              return (d.enabled) ? d.timesUsed : 0;                       // UPDATED
+            }));
+            var percent = Math.round(1000 * d.data.timesUsed / total) / 10;
+            toolTip.select('.defaultCategory').html(d.data.defaultCategory);
+            toolTip.select('.timesUsed').html(d.data.timesUsed); 
+            toolTip.select('.percent').html(percent + '%'); 
+            toolTip.style('display', 'block');
+          });
+          
+          path.on('mouseout', function() {
+            toolTip.style('display', 'none');
+          });
+    
+          path.on('mousemove', function(d) {
+            toolTip.style('top', (d3.event.pageY + 1) + 'px')
+              .style('left', (d3.event.pageX + 1) + 'px');
+          });
+
+          path.append("path")
               .style("fill", function(d) { return color(d.data.defaultCategory); })
               .transition().delay(function(d, i) { return i * 500; }).duration(500)
                 .attrTween('d', function(d) {
@@ -71,72 +99,64 @@
                 }
               });
 
-         
-          var legend = svg.selectAll('.legend')                    
-          .data(color.domain())                                   
-          .enter()                                                
-          .append('g')                                            
-          .attr('class', 'legend')                                
-          .attr('transform', function(d, i) {                     
-            var height = legendRectSize + legendSpacing;          
-            var offset =  height * color.domain().length / 2;     
-            var horz = -2 * legendRectSize;                       
-            var vert = i * height - offset;                       
-            return 'translate(' + horz + ',' + vert + ')';        
-          });                                                     
-
-        legend.append('rect')                                     
-          .attr('width', legendRectSize)                          
-          .attr('height', legendRectSize)                         
-          .style('fill', color)                                   
-          .style('stroke', color);                                
           
-        legend.append('text')                                     
-          .attr('x', legendRectSize + legendSpacing)              
-          .attr('y', legendRectSize - legendSpacing)              
-          .text(function(d) { return d; }); 
+            
+          var legend = svg.selectAll('.legend')
+            .data(color.domain())
+            .enter()
+            .append('g')
+            .attr('class', 'legend')
+            .attr('transform', function(d, i) {
+              var height = legendRectSize + legendSpacing;
+              var offset =  height * color.domain().length / 2;
+              var horz = -2 * legendRectSize;
+              var vert = i * height - offset;
+              return 'translate(' + horz + ',' + vert + ')';
+            });
+            
+
+            legend.append('rect')
+            .attr('width', legendRectSize)
+            .attr('height', legendRectSize)                                   
+            .style('fill', color)
+            .style('stroke', color)                                   // UPDATED (removed semicolon)
+            .on('click', function(label) {                            // NEW
+              var rect = d3.select(this);                             // NEW
+              var enabled = true;                                     // NEW
+              var totalEnabled = d3.sum(data.mymood.map(function(d) {     // NEW
+                return (d.enabled) ? 1 : 0;                           // NEW
+              }));                                                    // NEW
+              
+              if (rect.attr('class') === 'disabled') {                // NEW
+                rect.attr('class', '');                               // NEW
+              } else {                                                // NEW
+                if (totalEnabled < 2) return;                         // NEW
+                rect.attr('class', 'disabled');                       // NEW
+                enabled = false;                                      // NEW
+              }                                                       // NEW
+              pie.value(function(d) {                                 // NEW
+                if (d.defaultCategory === label) d.enabled = enabled;           // NEW
+                return (d.enabled) ? d.timesUsed : 0;                     // NEW
+              });                                                     // NEW
+              path = path.data(pie(data.mymood));                         // NEW
+              path.transition()                                       // NEW
+                .duration(750)                                        // NEW
+                .attrTween('d', function(d) {                         // NEW
+                  var interpolate = d3.interpolate(this._current, d); // NEW
+                  this._current = interpolate(0);                     // NEW
+                  return function(t) {                                // NEW
+                    return arc(interpolate(t));                       // NEW
+                  };                                                  // NEW
+                });                                                   // NEW
+            });                                                       // NEW
+            
+          legend.append('text')
+            .attr('x', legendRectSize + legendSpacing)
+            .attr('y', legendRectSize - legendSpacing)
+            .text(function(d) { return d; });
+        }); 
 
 
-          g.on("mouseover", function(d) {
-              var total = d3.sum(data.mymood.map(function(d) {               
-              return d.timesUsed;                                           
-            }));
-
-
-              var percent = Math.round(1000 * d.data.timesUsed / total) / 10;
-              text1 = g.append("text")
-                  .attr("translate", arc.centroid(d))
-                  .attr("dy", ".5em")
-                  .attr("font-size", "40px")
-                  .style("text-anchor", "middle")
-                  .style("fill", "black")
-                  .attr("class", "on")
-                  .text(d.data.defaultCategory);
-
-               text2 = g.append("text")
-                  .attr("translate", arc.centroid(d))
-                  .attr("dy", "45")
-                  .attr("font-size", "20px")
-                  .style("text-anchor", "middle")
-                  .style("fill", "black")
-                  .attr("class", "on")
-                  .text(percent + '%');   
-
-
-          })
-
-            .on("mouseout", function(d) {
-                text1.remove();
-                text2.remove();
-            });    
-
-          /*g.append("text")
-              .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
-              .attr("dy", ".35em")
-              .style("text-anchor", "middle")
-              .text(function(d) { return d.data.defaultCategory; });*/
-
-        });
 
         }
       };
