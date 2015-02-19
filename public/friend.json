@@ -55,8 +55,8 @@
 					,
 					"emoji4": 
 						{
-							"category": "Ecstatic",
-							"imageSRC": "images/laughhard.png",
+							"category": "Flirty",
+							"imageSRC": "images/heartEyes.png",
 							"percentage": "88%"
 						}
 				}
@@ -69,7 +69,7 @@
 					"emoji1": 
 						{
 							"category": "Happy",
-							"imageSRC": "images/tongue2.png",
+							"imageSRC": "images/shy.png",
 							"percentage": "42%"
 						}
 					,
