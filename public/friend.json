@@ -1,7 +1,11 @@
 [
 		{
+        "id": 1,
         "name": "Ayesha Mazumdar",
         "image": "images/ayeshaIcon.png",
+        "moodBefore": "Indifferent",
+        "moodAfter": "Happy",
+        "moodUsed" : "Flirty",
         "emoji": [
             {
                 "emoji1": {
@@ -28,8 +32,12 @@
         ]
     },
 		{
+			"id": 2,
 			"name": "Anh Tran",
 			"image": "images/anhIcon.png",
+			"moodBefore": "Happy",
+        	"moodAfter": "Indifferent",
+        	"moodUsed" : "Silly",
 			"emoji": [
 				{
 					"emoji1": 
@@ -55,21 +63,25 @@
 					,
 					"emoji4": 
 						{
-							"category": "Ecstatic",
-							"imageSRC": "images/laughhard.png",
+							"category": "Flirty",
+							"imageSRC": "images/heartEyes.png",
 							"percentage": "88%"
 						}
 				}
 			]
 		},{
+			"id": 3,
 			"name": "Gio Wong",
 			"image": "images/gioIcon.png",
+			"moodBefore": "Exhausted",
+        	"moodAfter": "Silly",
+        	"moodUsed" : "Angry",
 			"emoji": [
 				{
 					"emoji1": 
 						{
 							"category": "Happy",
-							"imageSRC": "images/tongue2.png",
+							"imageSRC": "images/shy.png",
 							"percentage": "42%"
 						}
 					,
@@ -96,8 +108,12 @@
 				}
 			]
 		},{
+			"id": 4,
 			"name": "Alicia Nguyen",
 			"image": "images/aliciaIcon.png",
+			"moodBefore": "Happy",
+        	"moodAfter": "Relaxed",
+        	"moodUsed" : "Indifferent",
 			"emoji": [
 				{
 					"emoji1": 

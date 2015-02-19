@@ -389,14 +389,36 @@ hr
 
 /* Bar Graoh */
 #chart {
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .graphName{
+  display: block;
   float: none;
   text-align: center;
   width: 100%;
+}
+
+
+.bar:hover {
+  fill: red;
+}
+
+.axis text {
+  font: 14px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
 }
 
 html {
@@ -420,6 +442,7 @@ rect {
         cursor: pointer;
         stroke-width: 2;                                          
 }
+
 rect.disabled {                              
   fill: transparent !important;              
 }     
@@ -457,8 +480,8 @@ rect.disabled {
   height: auto;
   max-width: 100%;
   -webkit-border-radius: 75px;
-    -moz-border-radius: 75px;
-    border-radius: 75px; 
+  -moz-border-radius: 75px;
+  border-radius: 75px; 
 }
  
 .photo-grid figure {
@@ -535,4 +558,28 @@ rect.disabled {
   -moz-transition-delay: 100ms;
   transition-delay: 100ms;
   z-index: 100;
+}
+
+.moodBreakdown {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ourMoodEmoji {
+  height:75px;
+  width:75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.moodLabel {
+  font-size: 20px;
+  text-decoration: bold;
+  text-align: right;
+  width: 250px;
+}
+
+.ourMoodIcon {
+  width: 150px;
 }

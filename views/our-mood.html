@@ -34,38 +34,147 @@
     </div>
     <br>
 
-  <div ng-controller="theirmoodCtrl">   
+  <div ng-controller="ourmoodCtrl">   
     <div class="userImage row">
-        <div class="col-md-6">
-            <img class="userIcon" ng-src="/{{friends[0].image}}"/>
-              <br>
+        <div class="col-md-6 user" id={{friends[0].id}}>
+          
+            <img class="userIcon" ng-src="/{{friends[0].image}}"/ ng-click="toggle()">
+            <br>
               <div class="userLabel">
                 {{friends[0].name}}
               </div>
+            <div class="moodBreakdown" ng-show="myVar">
+              <br>
+              <p class="col-xs-6 moodLabel">
+                Mood Before: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[0].moodBefore}}
+                <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+              </p>
+                
+              <p class="col-xs-6 moodLabel">
+                Mood After: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[0].moodAfter}}
+                <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+              </p>
+              
+              <p class="col-xs-6 moodLabel">
+                Mood Most Used: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[0].moodUsed}}
+                <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+              </p> 
+            </div>
         </div>
-        <div class="col-md-6">
-            <img class="userIcon" ng-src="/{{friends[1].image}}"/>
+
+        <div class="col-md-6 user" id={{friends[1].id}}>
+            <img class="userIcon" ng-src="/{{friends[1].image}}"/ ng-click="toggle2()">
             <br>
             <div class="userLabel">
               {{friends[1].name}}
             </div>
+            <div class="moodBreakdown" ng-show="myVar2">
+              <br>
+              <p class="col-xs-6 moodLabel">
+                Mood Before: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[1].moodBefore}}
+                <img class="ourMoodEmoji" ng-src="{{friends[1].emoji[0].emoji3.imageSRC}}">
+              </p>
+                
+              <p class="col-xs-6 moodLabel">
+                Mood After: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[1].moodAfter}}
+                <img class="ourMoodEmoji" ng-src="{{friends[1].emoji[0].emoji2.imageSRC}}">
+              </p>
+              
+              <p class="col-xs-6 moodLabel">
+                Mood Most Used: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[1].moodUsed}}
+                <img class="ourMoodEmoji" ng-src="{{friends[1].emoji[0].emoji4.imageSRC}}">
+              </p> 
+            </div>
+
         </div>
     </div>
         <br>
         <br>
     <div class="userImage row">
-        <div class="col-md-6">
-            <img class="userIcon" ng-src="/{{friends[2].image}}"/>
+        <div class="col-md-6 user" id={{friends[2].id}}>
+            <img class="userIcon" ng-src="/{{friends[2].image}}"/ ng-click="toggle3()" >
             <br>
             <div class="userLabel">
               {{friends[2].name}}
             </div>
+            <div class="moodBreakdown" ng-show="myVar3">
+              <br>
+              <p class="col-xs-6 moodLabel">
+                Mood Before: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[2].moodBefore}}
+                <img class="ourMoodEmoji" ng-src="{{friends[2].emoji[0].emoji1.imageSRC}}">
+              </p>
+                
+              <p class="col-xs-6 moodLabel">
+                Mood After: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[2].moodAfter}}
+                <img class="ourMoodEmoji" ng-src="{{friends[2].emoji[0].emoji2.imageSRC}}">
+              </p>
+              
+              <p class="col-xs-6 moodLabel">
+                Mood Most Used: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[2].moodUsed}}
+                <img class="ourMoodEmoji" ng-src="{{friends[2].emoji[0].emoji4.imageSRC}}">
+              </p> 
+            </div>
         </div>
-        <div class="col-md-6">
-            <img class="userIcon" ng-src="/{{friends[3].image}}"/>
+        <div class="col-md-6 user"id={{friends[3].id}}>
+
+            <img class="userIcon" ng-src="/{{friends[3].image}}"/ ng-click="toggle4()">
+
             <br>
             <div class="userLabel">
               {{friends[3].name}}
+            </div>
+            <div class="moodBreakdown" ng-show="myVar4">
+              <br>
+              <p class="col-xs-6 moodLabel">
+                Mood Before: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[3].moodBefore}}
+                <img class="ourMoodEmoji" ng-src="{{friends[3].emoji[0].emoji4.imageSRC}}">
+              </p>
+                
+              <p class="col-xs-6 moodLabel">
+                Mood After: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[3].moodAfter}}
+                <img class="ourMoodEmoji" ng-src="{{friends[3].emoji[0].emoji1.imageSRC}}">
+              </p>
+              
+              <p class="col-xs-6 moodLabel">
+                Mood Most Used: 
+              </p>
+              <p class="col-xs-6 ourMoodIcon">
+                {{friends[3].moodUsed}}
+                <img class="ourMoodEmoji" ng-src="{{friends[3].emoji[0].emoji3.imageSRC}}">
+              </p> 
             </div>
         </div>
     </div>
