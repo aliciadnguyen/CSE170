@@ -11,5 +11,14 @@
       $scope.toggle = function() {
         $scope.myVar = !$scope.myVar;
       };
+      $scope.toggle2 = function() {
+        $scope.myVar2 = !$scope.myVar2;
+      };
+      $scope.toggle3 = function() {
+        $scope.myVar3 = !$scope.myVar3;
+      };
+      $scope.toggle4 = function() {
+        $scope.myVar4 = !$scope.myVar4;
+      };
   }]);
 }());
