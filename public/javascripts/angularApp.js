@@ -50,6 +50,7 @@
             
         })
 
+        
         .state('sorting', {
             url: '/sorting',
             templateUrl: 'sorting.html',

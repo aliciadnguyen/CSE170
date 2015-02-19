@@ -2,9 +2,7 @@
   'use strict';
 
   angular.module('myApp.controllers').controller('mymoodCtrl',['$scope','mmood',function($scope,mmood){
-   
-    console.log(mmood.mymoods);
-    $scope.mymoods = mmood.mymoods;      	
+    $scope.mymoods = mmood.mymoods;
 }])
 
 
@@ -20,7 +18,7 @@
 
   	o.getAll = function(){
   		return $http.get('/my-mood').success(function (data){
-  			angular.copy(data, o.mymoods);
+  			angular.copy(data.myemotions, o.mymoods);
   		});
   	};
 

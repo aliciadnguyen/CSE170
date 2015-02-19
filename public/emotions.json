@@ -1,0 +1,147 @@
+{
+	"myemotions":[
+	
+				{	
+					"name": "redFace",
+					"defaultCategory": "Angry",
+					"customCategory": "",
+					"imageSRC": "images/redFace.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "heartEyes",
+					"defaultCategory": "Flirty",
+					"customCategory": "",
+					"imageSRC": "images/heartEyes.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "worried",
+					"defaultCategory": "Sad",
+					"customCategory": "",
+					"imageSRC": "images/worried.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "winky",
+					"defaultCategory": "Flirty",
+					"customCategory": "",
+					"imageSRC": "images/winkyface.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "wideEyeTongue",
+					"defaultCategory": "Silly",
+					"customCategory": "",
+					"imageSRC": "images/wideEyeTongue.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "sunglasses",
+					"defaultCategory": "Angry",
+					"customCategory": "",
+					"imageSRC": "images/sunglasses.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "smirk",
+					"defaultCategory": "Silly",
+					"customCategory": "",
+					"imageSRC": "images/smirk.png",
+					"timesUsed": "0"
+				},	
+				{	
+					"name": "sigh",
+					"defaultCategory": "Sad",
+					"customCategory": "",
+					"imageSRC": "images/sigh.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "shy",
+					"defaultCategory": "Happy",
+					"customCategory": "",
+					"imageSRC": "images/shy.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "tongue2",
+					"defaultCategory": "Silly",
+					"customCategory": "",
+					"imageSRC": "images/tongue2.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "kissy",
+					"defaultCategory": "Flirty",
+					"customCategory": "",
+					"imageSRC": "images/kissy.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "joy",
+					"defaultCategory": "Happy",
+					"customCategory": "",
+					"imageSRC": "images/joy.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "crying",
+					"defaultCategory": "Sad",
+					"customCategory": "",
+					"imageSRC": "images/crying.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "bigEye",
+					"defaultCategory": "Sad",
+					"customCategory": "",
+					"imageSRC": "images/bigEye.png",
+					"timesUsed": "0"
+				},
+				{	
+					"name": "awkward",
+					"defaultCategory": "Silly",
+					"customCategory": "",
+					"imageSRC": "images/awkwardLaugh.png",
+					"timesUsed": "0"
+				},
+				{
+					"name": "teethEmoji",
+					"defaultCategory": "Happy",
+					"customCategory": "",
+					"imageSRC": "images/teethEmoji.png",
+					"timesUsed": "0"		
+				},
+				{
+					"name": "cry",
+					"defaultCategory": "Sad",
+					"customCategory": "",
+					"imageSRC": "images/cry.png",
+					"timesUsed": "0"
+				},
+				{
+					"name": "tongue",
+					"defaultCategory": "Silly",
+					"customCategory": "",
+					"imageSRC": "images/tongue.png",
+					"timesUsed": "0"
+				},
+				{
+					"name": "happywink",
+					"defaultCategory": "Flirty",
+					"customCategory": "",
+					"imageSRC": "images/happywink.png",
+					"timesUsed": "0"
+				},
+				{
+					"name": "angry",
+					"defaultCategory": "Angry",
+					"customCategory": "",
+					"imageSRC": "images/angry.png",
+					"timesUsed": "0"
+				}
+				
+	
+	]
+}

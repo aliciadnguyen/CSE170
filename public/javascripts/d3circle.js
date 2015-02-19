@@ -2,10 +2,32 @@
   'use strict';
 
   angular.module('myApp.directives')
-    .directive('d3Circle', ['d3', function(d3) {
+    .directive('d3Circle', ['d3','mmood', function(d3,mmood) {
       return {
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
+          mmood.getAll().success(function(data){
+              scope.data = data;
+          
+                         
+            //Sort the array by category and numberOfTimesUsed
+             var result = scope.data.myemotions.map(function (x){
+              return x.defaultCategory
+             }).reduce(function (acc,x){
+                acc[x] = (acc[x] || 0) + 1
+                return acc
+             },{})
+
+              console.log(result);  
+
+             result = Object.keys(result).map(function(k) {
+                return {defaultCategory: k, timesUsed: result[k]}
+            
+              ;})
+
+              console.log(result);  
+
+        
          
        var width = (window.innerWidth < 1280) ? 500 : 600,
         height = (window.innerWidth < 1280) ? 500 : 500,
@@ -51,14 +73,14 @@
           .attr('class', 'percent');
         
 
-        d3.json('data.json', function(error, data) {
-          data.mymood.forEach(function(d) {
+        d3.json(result, function(error, data) {
+          result.forEach(function(d) {
             d.timesUsed = +d.timesUsed;
             d.enabled = true;                                         // NEW
           });
           
           var path = svg.selectAll('path')
-            .data(pie(data.mymood))
+            .data(pie(result))
             .enter()
             .append('path')
             .attr('d', arc)
@@ -69,7 +91,7 @@
           
 
           path.on('mouseover', function(d) {
-            var total = d3.sum(data.mymood.map(function(d) {
+            var total = d3.sum(result.map(function(d) {
               return (d.enabled) ? d.timesUsed : 0;                       // UPDATED
             }));
             var percent = Math.round(1000 * d.data.timesUsed / total) / 10;
@@ -88,16 +110,6 @@
               .style('left', (d3.event.pageX - 110) + 'px');
           });
 
-          path.append("path")
-              .style("fill", function(d) { return color(d.data.defaultCategory); })
-              .transition().delay(function(d, i) { return i * 500; }).duration(500)
-                .attrTween('d', function(d) {
-                  var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
-                    return function(t) {
-                    d.endAngle = i(t);
-                    return arc(d);
-                }
-              });
 
           
             
@@ -123,7 +135,7 @@
             .on('click', function(label) {                            // NEW
               var rect = d3.select(this);                             // NEW
               var enabled = true;                                     // NEW
-              var totalEnabled = d3.sum(data.mymood.map(function(d) {     // NEW
+              var totalEnabled = d3.sum(result.map(function(d) {     // NEW
                 return (d.enabled) ? 1 : 0;                           // NEW
               }));                                                    // NEW
               
@@ -138,7 +150,7 @@
                 if (d.defaultCategory === label) d.enabled = enabled;           // NEW
                 return (d.enabled) ? d.timesUsed : 0;                     // NEW
               });                                                     // NEW
-              path = path.data(pie(data.mymood));                         // NEW
+              path = path.data(pie(result));                         // NEW
               path.transition()                                       // NEW
                 .duration(750)                                        // NEW
                 .attrTween('d', function(d) {                         // NEW
@@ -158,7 +170,7 @@
         }); 
 
 
-
+        });
         }
       };
     }]);

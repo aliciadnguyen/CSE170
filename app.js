@@ -11,7 +11,7 @@ mongoose.connect('mongodb://localhost/emojilyze');
 
 
 
-require('./models/myMoods');
+require('./models/myEmotions');
 //require('./models/theirMoods');
 
 

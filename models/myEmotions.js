@@ -1,13 +1,15 @@
 var mongoose = require('mongoose');
 
-var myMoodSchema = new mongoose.Schema({
-	name: String,
+var EmotionSchema = new mongoose.Schema({
+
+	myemotions:[{	
+	name : String,
 	defaultCategory: String,
 	customCategory: String,
 	imageSrc: String,
 	timesUsed: Number
+}]
 });
 
 
-
-mongoose.model('Mymood',myMoodSchema);
+mongoose.model('myEmotion',EmotionSchema);

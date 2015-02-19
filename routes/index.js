@@ -5,8 +5,7 @@ var router = express.Router();
 
 
 //var Theirmood = mongoose.model('Theirmood');
-var Mymood = mongoose.model('Mymood');
-
+var myEmotion = mongoose.model('myEmotion');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
@@ -14,19 +13,28 @@ router.get('/', function(req, res, next) {
 
 
 
+
 router.get('/my-mood',function(req, res, next){
 
-	Mymood.find(function (err,moods){
-
-
+	myEmotion.findOne({},{_id:0},function (err, emotions){
 		if (err){
 			console.log(err);
 			return next(err);
 		}
-
-		res.json(moods);
-	});
+		console.log(emotions);
+		res.json(emotions);
+	});	
 });
+
+
+router.post('my-mood',function(req, res, next){
+	var updateMood = new myEmotion(req);
+	updateMood.save(function (err, updatemood){
+		if(err){return next(err);})
+
+		res.json(updatemood);
+	})
+})
 
 
 router.get('/their-mood', function(req, res, next){
