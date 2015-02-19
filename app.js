@@ -16,7 +16,6 @@ require('./models/myMoods');
 
 
 var routes = require('./routes/index');
-var ourMood = require('./routes/ourMood');
 //var users = require('./routes/users');
 
 
@@ -84,5 +83,4 @@ app.use(function(err, req, res, next) {
     });
 });
 
-app.get('/user/:id', ourMood.ourMoodInfo);
 module.exports = app;
