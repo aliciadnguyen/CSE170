@@ -1,44 +1,45 @@
 {
+	
 	"emoji": [
 		{
 			"name": "teethEmoji",
 			"defaultCategory": "Happy",
-			"customCategory": "",
+			"customCategory": "Happy",
 			"imageSRC": "/images/teethEmoji.png",
 			"timesUsed": "1"		
 		},
 		{
 			"name": "cry",
 			"defaultCategory": "Sad",
-			"customCategory": "",
+			"customCategory": "Sad",
 			"imageSRC": "/images/cry.png",
 			"timesUsed": "1"			
 		},
 		{
 			"name": "tongue",
 			"defaultCategory": "Silly",
-			"customCategory": "",
+			"customCategory": "Silly",
 			"imageSRC": "/images/tongue.png",			
 			"timesUsed": "1"
 		},
 		{
 			"name": "happywink",
 			"defaultCategory": "Flirty",
-			"customCategory": "",
+			"customCategory": "Flirty",
 			"imageSRC": "/images/happywink.png",			
 			"timesUsed": "1"
 		},
 		{
 			"name": "angry",
 			"defaultCategory": "Angry",
-			"customCategory": "",
+			"customCategory": "Angry",
 			"imageSRC": "/images/angry.png",
 			"timesUsed": "1"
 		},
 		{
 			"name": "laughhard",
 			"defaultCategory": "Happy",
-			"customCategory": "",
+			"customCategory": "Happy",
 			"imageSRC": "/images/laughhard.png",
 			"timesUsed": "1"
 		}
