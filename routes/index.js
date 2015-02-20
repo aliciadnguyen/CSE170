@@ -30,7 +30,7 @@ router.get('/my-mood',function(req, res, next){
 router.post('my-mood',function(req, res, next){
 	var updateMood = new myEmotion(req);
 	updateMood.save(function (err, updatemood){
-		if(err){return next(err);})
+		if(err){return next(err);}
 
 		res.json(updatemood);
 	})
