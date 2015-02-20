@@ -7,22 +7,22 @@
                 "emoji1": {
                     "category": "Angry",
                     "imageSRC": "images/angry.png",
-                    "percentage": "40%"
+                    "percentage": "25%"
                 },
                 "emoji2": {
                     "category": "Happy",
                     "imageSRC": "images/happywink.png",
-                    "percentage": "66%"
+                    "percentage": "46%"
                 },
                 "emoji3": {
                     "category": "Indifferent",
                     "imageSRC": "images/sigh.png",
-                    "percentage": "35%"
+                    "percentage": "9%"
                 },
                 "emoji4": {
                     "category": "Flirty",
                     "imageSRC": "images/smirk.png",
-                    "percentage": "75%"
+                    "percentage": "20%"
                 }
             }
         ]
@@ -36,28 +36,28 @@
 						{
 							"category": "Silly",
 							"imageSRC": "images/tongue.png",
-							"percentage": "80%"
+							"percentage": "40%"
 						}
 					,
 					"emoji2": 
 						{
 							"category": "Indifferent",
 							"imageSRC": "images/sigh.png",
-							"percentage": "43%"
+							"percentage": "4%"
 						}
 					,
 					"emoji3": 
 						{
 							"category": "Happy",
 							"imageSRC": "images/happywink.png",
-							"percentage": "78%"
+							"percentage": "38%"
 						}
 					,
 					"emoji4": 
 						{
 							"category": "Ecstatic",
 							"imageSRC": "images/laughhard.png",
-							"percentage": "88%"
+							"percentage": "18%"
 						}
 				}
 			]
@@ -70,28 +70,28 @@
 						{
 							"category": "Exhausted",
 							"imageSRC": "images/XXeyes.png",
-							"percentage": "42%"
+							"percentage": "22%"
 						}
 					,
 					"emoji2": 
 						{
 							"category": "Silly",
 							"imageSRC": "images/awkwardLaugh.png",
-							"percentage": "67%"
+							"percentage": "37%"
 						}
 					,
 					"emoji3": 
 						{
 							"category": "Sad",
 							"imageSRC": "images/cry.png",
-							"percentage": "35%"
+							"percentage": "15%"
 						}
 					,
 					"emoji4": 
 						{
 							"category": "Angry",
 							"imageSRC": "images/angry.png",
-							"percentage": "55%"
+							"percentage": "26%"
 						}
 				}
 			]
@@ -104,28 +104,28 @@
 						{
 							"category": "Relaxed",
 							"imageSRC": "images/sunglasses.png",
-							"percentage": "46%"
+							"percentage": "26%"
 						}
 					,
 					"emoji2": 
 						{
 							"category": "Silly",
 							"imageSRC": "images/tongue.png",
-							"percentage": "33%"
+							"percentage": "23%"
 						}
 					,
 					"emoji3": 
 						{
 							"category": "Indifferent",
 							"imageSRC": "images/sigh.png",
-							"percentage": "97%"
+							"percentage": "32%"
 						}
 					,
 					"emoji4": 
 						{
 							"category": "Happy",
 							"imageSRC": "images/awkwardLaugh.png",
-							"percentage": "68%"
+							"percentage": "19%"
 						}
 				}
 			]

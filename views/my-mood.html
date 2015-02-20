@@ -43,7 +43,7 @@
     <div ng-controller="mymoodCtrl">
       <ul id="emojilist">
         <li ng-repeat= "mymood in mymoods">
-          <img class="img-responsive project-image medium-emoji"  ng-src="/{{mymood.imageSRC}}"/>
+          <img class="img-responsive project-image medium-emoji" ng-click="theupdate(mymood.name)" ng-src="/{{mymood.imageSRC}}"/>
       </ul>
     </div>
 
