@@ -27,12 +27,14 @@ router.get('/my-mood',function(req, res, next){
 });
 
 
-<<<<<<< HEAD
 router.post('my-mood',function(req, res, next){
 	var updateMood = new myEmotion(req);
 	updateMood.save(function (err, updatemood){
 		if(err){return next(err);}
-=======
+	});
+});
+
+
 router.put('/my-mood/update',function(req, res, next){
 	
 	console.log(req.body);
@@ -40,7 +42,6 @@ router.put('/my-mood/update',function(req, res, next){
 		if(err){
 			return next(err);
 		}
->>>>>>> 983f7231dc3519a24320b40bb087e5fe35efdf4a
 
 		res.json(mymood);
 	});
@@ -69,8 +70,5 @@ router.post('/their-mood', function(req, res, next){
 		res.json(friend);
 	});
 });
-
-
-
 
 module.exports = router;
