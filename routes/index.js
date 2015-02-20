@@ -44,7 +44,8 @@ router.put('/my-mood/update',function(req, res, next){
 		}
 		console.log("test");
 		console.log(mymood);
-		res.json(mymood);
+		//res.json(mymood);
+		
 	});
 });
 
