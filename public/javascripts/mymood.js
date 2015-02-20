@@ -48,9 +48,9 @@
         console.log(moodsarray);
 
         var index = findIndex(moodsarray,"name",emoji);
-        //console.log(moodsarray[index].timesUsed);
+        console.log(moodsarray[index].timesUsed);
         moodsarray[index].timesUsed += 1;
-        //console.log(moodsarray[index].timesUsed);
+        console.log(moodsarray[index].timesUsed);
         //moodsarray[index][timesUsed];
         //console.log(moodsarray[index]); 
 
@@ -66,5 +66,6 @@
     };
 
   return o;
-  }]);
+  }])
+  
 }());

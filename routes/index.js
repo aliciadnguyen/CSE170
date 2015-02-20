@@ -17,7 +17,6 @@ router.get('/my-mood',function(req, res, next){
 
 	myEmotion.find(function (err, emotions){
 		if (err){
-			console.log(err);
 			return next(err);
 		}
 		res.json(emotions);
@@ -37,12 +36,14 @@ router.put('/my-mood/update',function(req, res, next){
 	
 	//console.log(req.body);
 	//console.log(req.body._id);
-	var timesUsed = req.body.timesUsed;
-	myEmotion.findByIdAndUpdate(req.body._id,{timesUsed : timesUsed},function (err,mymood){
+	var number = req.body.timesUsed;
+	console.log(number);
+	myEmotion.findByIdAndUpdate(req.body._id,{timesUsed : number},function (err,mymood){
 		if(err){
 			return next(err);
 		}
-
+		console.log("test");
+		console.log(mymood);
 		res.json(mymood);
 	});
 });

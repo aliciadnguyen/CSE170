@@ -2,32 +2,15 @@
   'use strict';
 
   angular.module('myApp.directives')
-    .directive('d3Circle', ['d3','mmood', function(d3,mmood) {
+    .directive('d3Circle', ['d3', function(d3) {
       return {
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
-          mmood.getAll().success(function(data){
-              //console.log(scope.data);
-              scope.data = data;
-              //console.log(scope.data);
+          // mmood.getAll().success(function(data){
+          //     //console.log(scope.data);
+          //     scope.data = data;
+          //     //console.log(scope.data);
                          
-            //Sort the array by category and numberOfTimesUsed
-             var sort = scope.data.map(function (x){
-              return x.defaultCategory
-             }).reduce(function (acc,x){
-                acc[x] = (acc[x] || 0) + 1
-                return acc
-             },{})
-
-              //console.log(scope.data);  
-
-             var result= Object.keys(sort).map(function(k) {
-                return {defaultCategory: k, timesUsed: sort[k]}
-            
-              ;})
-
-              //console.log(scope.data);
-        
          
        var width = (window.innerWidth < 1280) ? 500 : 600,
         height = (window.innerWidth < 1280) ? 500 : 500,
@@ -73,11 +56,30 @@
           .attr('class', 'percent');
         
 
-        d3.json(result, function(error, data) {
-          result.forEach(function(d) {
+        d3.json('/my-mood', function(error, data) {
+          data.forEach(function(d) {
             d.timesUsed = +d.timesUsed;
             d.enabled = true;                                         // NEW
           });
+          
+          //function to sort arrays
+          var combineCategories = function (data) {
+          var res = {};
+
+          data.forEach(function (el) {
+            res[el.defaultCategory] = (res[el.defaultCategory]) 
+              ? res[el.defaultCategory] += +el.timesUsed 
+              : +el.timesUsed;
+          });
+
+          return Object.keys(res).map(function (el) {
+            return {defaultCategory: el, timesUsed: res[el], enabled: true};  
+             });
+          }
+
+          console.log(combineCategories(data));
+
+          var result = combineCategories(data);
           
           var path = svg.selectAll('path')
             .data(pie(result))
@@ -170,7 +172,7 @@
         }); 
 
 
-        });
+        //});
         }
       };
     }]);
