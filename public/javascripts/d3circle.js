@@ -7,25 +7,26 @@
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
           mmood.getAll().success(function(data){
+              //console.log(scope.data);
               scope.data = data;
           
                          
             //Sort the array by category and numberOfTimesUsed
-             var result = scope.data.myemotions.map(function (x){
+             var result = scope.data.map(function (x){
               return x.defaultCategory
              }).reduce(function (acc,x){
                 acc[x] = (acc[x] || 0) + 1
                 return acc
              },{})
 
-              console.log(result);  
+              //console.log(result);  
 
              result = Object.keys(result).map(function(k) {
                 return {defaultCategory: k, timesUsed: result[k]}
             
               ;})
 
-              console.log(result);  
+              //console.log(result);  
 
         
          
