@@ -36,12 +36,12 @@
 			"imageSRC": "/images/angry.png",
 			"timesUsed": "1"
 		},
-		{
-			"name": "laughhard",
-			"defaultCategory": "Happy",
-			"customCategory": "Happy",
-			"imageSRC": "/images/laughhard.png",
-			"timesUsed": "1"
+		{	
+			"name": "bigEye",
+			"defaultCategory": "Sad",
+			"customCategory": "Sad",
+			"imageSRC": "images/bigEye.png",
+			"timesUsed": "0"
 		}
 	]
 }
