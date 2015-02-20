@@ -30,12 +30,14 @@
       <div class="jumbotron text-center pageTitleBar">
         <h4 class="pageTitle">Today's Mood</h4>
       </div>
+
+      <p class="instructions"> Explore the graph to learn today's top 5 moods. </p>
       <div id="svgPie"> 
         <d3-Circle></d3-Circle>
       </div>
 
       <div class = "graph-key-bar">
-        <p class="moodInstructions">Click the emoji that matches your current mood!</p>
+        <p class="moodInstructions">Click an emoji to update your current mood!</p>
       </div>
 
     <div ng-controller="mymoodCtrl">
