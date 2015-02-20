@@ -13,24 +13,32 @@ router.get('/', function(req, res, next) {
 
 
 
-
 router.get('/my-mood',function(req, res, next){
 
-	myEmotion.find({},function (err, emotions){
+	myEmotion.find(function (err, emotions){
 		if (err){
 			console.log(err);
 			return next(err);
 		}
-		console.log(emotions);
 		res.json(emotions);
 	});	
 });
 
 
+router.post('my-mood',function(req, res, next){
+	var updateMood = new myEmotion(req);
+	updateMood.save(function (err, updatemood){
+		if(err){return next(err);}
+	});
+});
+
+
 router.put('/my-mood/update',function(req, res, next){
 	
-	console.log(req.body);
-	myEmotion.update(req.body,function (err,mymood){
+	//console.log(req.body);
+	//console.log(req.body._id);
+	var timesUsed = req.body.timesUsed;
+	myEmotion.findByIdAndUpdate(req.body._id,{timesUsed : timesUsed},function (err,mymood){
 		if(err){
 			return next(err);
 		}
@@ -62,8 +70,5 @@ router.post('/their-mood', function(req, res, next){
 		res.json(friend);
 	});
 });
-
-
-
 
 module.exports = router;

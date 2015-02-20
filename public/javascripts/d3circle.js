@@ -9,25 +9,24 @@
           mmood.getAll().success(function(data){
               //console.log(scope.data);
               scope.data = data;
-          
+              //console.log(scope.data);
                          
             //Sort the array by category and numberOfTimesUsed
-             var result = scope.data.map(function (x){
+             var sort = scope.data.map(function (x){
               return x.defaultCategory
              }).reduce(function (acc,x){
                 acc[x] = (acc[x] || 0) + 1
                 return acc
              },{})
 
-              //console.log(result);  
+              //console.log(scope.data);  
 
-             result = Object.keys(result).map(function(k) {
-                return {defaultCategory: k, timesUsed: result[k]}
+             var result= Object.keys(sort).map(function(k) {
+                return {defaultCategory: k, timesUsed: sort[k]}
             
               ;})
 
-              //console.log(result);  
-
+              //console.log(scope.data);
         
          
        var width = (window.innerWidth < 1280) ? 500 : 600,

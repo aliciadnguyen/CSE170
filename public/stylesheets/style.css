@@ -174,12 +174,13 @@ li .project-image{
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: auto;
+  padding-top: 10px;
 }
 
 .userLabel {
 	font-size:30px;
 	text-align: center;
+  padding-bottom: 10px; 
 }
 
 .emoji1 {
@@ -583,3 +584,18 @@ rect.disabled {
 .ourMoodIcon {
   width: 150px;
 }
+
+.btn {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-default {
+  background-color: #ffd031;
+  border-color: #ffd031;
+}
+

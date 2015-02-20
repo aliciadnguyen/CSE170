@@ -8,6 +8,8 @@
         console.log($scope.friends);
       });
       $scope.myVar = false;
+
+      // Each user's toggle for mood breakdown
       $scope.toggle = function() {
         $scope.myVar = !$scope.myVar;
       };
@@ -20,5 +22,12 @@
       $scope.toggle4 = function() {
         $scope.myVar4 = !$scope.myVar4;
       };
+      $scope.toggle5 = function() {
+        $scope.myVar5 = !$scope.myVar5;
+      };
+      $scope.toggle6 = function() {
+        $scope.myVar6 = !$scope.myVar6;
+      };
+      
   }]);
 }());
