@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/my-mood',function(req, res, next){
 
-	myEmotion.findOne({},{_id:0},function (err, emotions){
+	myEmotion.find({},function (err, emotions){
 		if (err){
 			console.log(err);
 			return next(err);
@@ -27,14 +27,17 @@ router.get('/my-mood',function(req, res, next){
 });
 
 
-router.post('my-mood',function(req, res, next){
-	var updateMood = new myEmotion(req);
-	updateMood.save(function (err, updatemood){
-		if(err){return next(err);})
+router.put('/my-mood/update',function(req, res, next){
+	
+	console.log(req.body);
+	myEmotion.update(req.body,function (err,mymood){
+		if(err){
+			return next(err);
+		}
 
-		res.json(updatemood);
-	})
-})
+		res.json(mymood);
+	});
+});
 
 
 router.get('/their-mood', function(req, res, next){
