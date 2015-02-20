@@ -19,7 +19,8 @@ angular.module('myApp.controllers').controller('SortingCtrl', ['$scope', '$http'
       }
 
       $scope.list = categoryArray;  
-      $scope.current = categoryArray[0];
+      $scope.initial = categoryArray[0];
+      $(".categoryBtn:first-child").val($scope.initial);
   });
 
 
@@ -35,8 +36,16 @@ angular.module('myApp.controllers').controller('SortingCtrl', ['$scope', '$http'
     console.log('Submit clicked');
     console.log($('#customCategory').val());
 
-    //update current emoji category - FIX THISSSSS
-    $scope.emojiArray[index]['customCategory'] = $('#customCategory').val();
+    var custom = $('#customCategory').val();
+
+    //update current emoji category
+    if(!custom.replace(/^\s+/g, '').length) {
+      $scope.emojiArray[index]['customCategory'] = $(".categoryBtn:first-child").val();
+    }
+    else {
+      $scope.emojiArray[index]['customCategory'] = custom;
+      $scope.list.push(custom);
+    }
 
     //update index
     if(index == $scope.emojiArray.length-1) {

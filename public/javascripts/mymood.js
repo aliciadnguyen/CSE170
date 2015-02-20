@@ -58,7 +58,7 @@
         return $http.put('/my-mood/update',moodsarray[index])
             .success(function (data) {
               console.log("successful add");
-              //moodsarray[index].timesUsed += 1;
+              
                
             }).error(function(error){
               console.log("error adding");
