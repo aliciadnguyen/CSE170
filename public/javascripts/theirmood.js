@@ -5,7 +5,7 @@
     $http.get('friend.json')
       .then(function(res){
         $scope.friends = res.data;
-        //console.log($scope.friends[0].emoji[0].emoji1.imageSRC);
+        console.log($scope.friends[0].emoji[0].emoji1.imageSRC);
       });
 
 

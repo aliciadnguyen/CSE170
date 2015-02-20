@@ -1,6 +1,5 @@
 [
-		{
-        "id": 1,
+	{
         "name": "Ayesha Mazumdar",
         "image": "images/ayeshaIcon.png",
         "moodBefore": "Indifferent",
@@ -11,28 +10,27 @@
                 "emoji1": {
                     "category": "Angry",
                     "imageSRC": "images/angry.png",
-                    "percentage": "40%"
+                    "percentage": "25%"
                 },
                 "emoji2": {
                     "category": "Happy",
                     "imageSRC": "images/happywink.png",
-                    "percentage": "66%"
+                    "percentage": "46%"
                 },
                 "emoji3": {
                     "category": "Indifferent",
                     "imageSRC": "images/sigh.png",
-                    "percentage": "35%"
+                    "percentage": "9%"
                 },
                 "emoji4": {
                     "category": "Flirty",
                     "imageSRC": "images/smirk.png",
-                    "percentage": "75%"
+                    "percentage": "20%"
                 }
             }
         ]
     },
 		{
-			"id": 2,
 			"name": "Anh Tran",
 			"image": "images/anhIcon.png",
 			"moodBefore": "Happy",
@@ -44,33 +42,32 @@
 						{
 							"category": "Silly",
 							"imageSRC": "images/tongue.png",
-							"percentage": "80%"
+							"percentage": "40%"
 						}
 					,
 					"emoji2": 
 						{
 							"category": "Indifferent",
 							"imageSRC": "images/sigh.png",
-							"percentage": "43%"
+							"percentage": "4%"
 						}
 					,
 					"emoji3": 
 						{
 							"category": "Happy",
 							"imageSRC": "images/happywink.png",
-							"percentage": "78%"
+							"percentage": "38%"
 						}
 					,
 					"emoji4": 
 						{
 							"category": "Flirty",
 							"imageSRC": "images/heartEyes.png",
-							"percentage": "88%"
+							"percentage": "18%"
 						}
 				}
 			]
 		},{
-			"id": 3,
 			"name": "Gio Wong",
 			"image": "images/gioIcon.png",
 			"moodBefore": "Exhausted",
@@ -82,33 +79,32 @@
 						{
 							"category": "Happy",
 							"imageSRC": "images/shy.png",
-							"percentage": "42%"
+							"percentage": "22%"
 						}
 					,
 					"emoji2": 
 						{
 							"category": "Silly",
 							"imageSRC": "images/awkwardLaugh.png",
-							"percentage": "67%"
+							"percentage": "37%"
 						}
 					,
 					"emoji3": 
 						{
 							"category": "Sad",
 							"imageSRC": "images/cry.png",
-							"percentage": "35%"
+							"percentage": "15%"
 						}
 					,
 					"emoji4": 
 						{
 							"category": "Angry",
 							"imageSRC": "images/angry.png",
-							"percentage": "55%"
+							"percentage": "26%"
 						}
 				}
 			]
 		},{
-			"id": 4,
 			"name": "Alicia Nguyen",
 			"image": "images/aliciaIcon.png",
 			"moodBefore": "Happy",
@@ -120,28 +116,102 @@
 						{
 							"category": "Relaxed",
 							"imageSRC": "images/sunglasses.png",
-							"percentage": "46%"
+							"percentage": "25%"
 						}
 					,
 					"emoji2": 
 						{
 							"category": "Silly",
 							"imageSRC": "images/tongue.png",
-							"percentage": "33%"
+							"percentage": "24%"
 						}
 					,
 					"emoji3": 
 						{
 							"category": "Indifferent",
 							"imageSRC": "images/sigh.png",
-							"percentage": "97%"
+							"percentage": "32%"
 						}
 					,
 					"emoji4": 
 						{
 							"category": "Happy",
 							"imageSRC": "images/awkwardLaugh.png",
-							"percentage": "68%"
+							"percentage": "19%"
+						}
+				}
+			]
+		},{
+			"name": "Jillian Banks",
+			"image": "images/banksIcon.png",
+			"moodBefore": "Angry",
+        	"moodAfter": "Sad",
+        	"moodUsed" : "Sad",
+			"emoji": [
+				{
+					"emoji1": 
+						{
+							"category": "Angry",
+							"imageSRC": "images/redFace.png",
+							"percentage": "21%"
+						}
+					,
+					"emoji2": 
+						{
+							"category": "Sad",
+							"imageSRC": "images/cry.png",
+							"percentage": "34%"
+						}
+					,
+					"emoji3": 
+						{
+							"category": "Indifferent",
+							"imageSRC": "images/sigh.png",
+							"percentage": "12%"
+						}
+					,
+					"emoji4": 
+						{
+							"category": "Mad",
+							"imageSRC": "images/angry.png",
+							"percentage": "33%"
+						}
+				}
+			]
+		},{
+			"name": "Angus Stone",
+			"image": "images/angusIcon.png",
+			"moodBefore": "Happy",
+        	"moodAfter": "Silly",
+        	"moodUsed" : "Flirty",
+			"emoji": [
+				{
+					"emoji1": 
+						{
+							"category": "Flirty",
+							"imageSRC": "images/smirk.png",
+							"percentage": "23%"
+						}
+					,
+					"emoji2": 
+						{
+							"category": "Silly",
+							"imageSRC": "images/heartEyes.png",
+							"percentage": "14%"
+						}
+					,
+					"emoji3": 
+						{
+							"category": "Joyful",
+							"imageSRC": "images/shy.png",
+							"percentage": "28%"
+						}
+					,
+					"emoji4": 
+						{
+							"category": "Happy",
+							"imageSRC": "images/happywink.png",
+							"percentage": "35%"
 						}
 				}
 			]
