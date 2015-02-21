@@ -8,9 +8,9 @@ var mongoose = require('mongoose');
 
 
 var local_uri = 'mongodb://localhost/emojilyze'
-var MONGOLAB_URI = mongodb://heroku_app33588978:pq1pf8elfa5gni8vo2g94ahsqe@ds045531.mongolab.com:45531/heroku_app33588978
+var MONGOLAB_URI =  'mongodb://gio:cowultra16@ds045531.mongolab.com:45531/heroku_app33588978'
 
-var database_uri = process.env.MONGOLAB_URI || local_database_uri
+var database_uri = MONGOLAB_URI || local_database_uri
 
 mongoose.connect(database_uri);
 
