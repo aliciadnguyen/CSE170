@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  angular.module('myApp.controllers').controller('mymoodCtrl',['$scope','mmood',function($scope,mmood){
+  angular.module('myApp.controllers').controller('mymoodCtrl',['$scope','mmood','$window',function($scope,mmood,$window){
     
     $scope.mymoods = mmood.mymoods;
     //console.log($scope.mymoods);
@@ -9,16 +9,16 @@
 
 
     $scope.theupdate = function (name){
-      
       //call the update method inside factory
       mmood.update($scope.mymoods,name);
+      $window.location.reload();
     }
 }])
 
 
 
 
-   .factory('mmood',['$http',function($http){
+   .factory('mmood',['$http','$window',function($http,$window){
 
   	var o = {
   		mymoods: []
@@ -44,13 +44,13 @@
 
 
      o.update = function (moodsarray,emoji) {
-        console.log(emoji);
-        console.log(moodsarray);
+        //console.log(emoji);
+        //console.log(moodsarray);
 
         var index = findIndex(moodsarray,"name",emoji);
-        console.log(moodsarray[index].timesUsed);
+        //console.log(moodsarray[index].timesUsed);
         moodsarray[index].timesUsed += 1;
-        console.log(moodsarray[index].timesUsed);
+        //console.log(moodsarray[index].timesUsed);
         //moodsarray[index][timesUsed];
         //console.log(moodsarray[index]); 
 
@@ -58,8 +58,6 @@
         return $http.put('/my-mood/update',moodsarray[index])
             .success(function (data) {
               console.log("successful add");
-              
-               
             }).error(function(error){
               console.log("error adding");
             });

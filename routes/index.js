@@ -42,10 +42,12 @@ router.put('/my-mood/update',function(req, res, next){
 		if(err){
 			return next(err);
 		}
-		console.log("test");
-		console.log(mymood);
-		//res.json(mymood);
-		
+		else{
+			//console.log("test");
+			console.log(mymood);
+			//res.location('index');
+			res.json(mymood);
+		}
 	});
 });
 
