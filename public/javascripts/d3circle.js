@@ -19,8 +19,10 @@
         var legendSpacing = 5;
         
 
-        var color = d3.scale.category20b();
+        //var color = d3.scale.category20b();
         
+        var color = d3.scale.ordinal()
+                  .range(["#d62728","#e377c2","#1f77b4","#ff7f0e","#9467bd"])
 
 
         var svg = d3.select('#svgPie')
