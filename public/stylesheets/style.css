@@ -169,12 +169,13 @@ li .project-image{
 
 .userIcon
 {
-	height:150px;
-	width:150px;
+	height:175px;
+	width:175px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
   padding-top: 10px;
+  max-width: 100%;
 }
 
 .userLabel {
@@ -202,7 +203,12 @@ li .project-image{
 
 hr
 {
-  background-color: #123455;
+  display: block;
+  position: relative;
+  background-color: #B8B8B8;
+  height: 1px;
+  width: 100%;
+  vertical-align: center;
 }
 
 .sortImage {
@@ -464,12 +470,14 @@ rect.disabled {
 
 .photo-grid {
   margin: 1em auto;
-  max-width: 1106px;
+  max-width: 100%;
   text-align: center;
 }
  
 .photo-grid li {
   display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
   width: 110px;
 }
  

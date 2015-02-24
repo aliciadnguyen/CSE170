@@ -39,11 +39,10 @@
 <!--Start of user's mood breakdown -->
 
   <div ng-controller="ourmoodCtrl">   
-    <ul>
-        <li id={{friends[0].id}}>
+
             <img class="userIcon" ng-src="/{{friends[0].image}}"/ ng-click="toggle()">
             <br>
-              <div class="userLabel">{{friends[0].name}}</div>
+            <div class="userLabel">{{friends[0].name}}</div>
             <div class="moodBreakdown" ng-show="myVar">
                 <div class="moodLabel"><span>Mood Before</span></div>
                 <p class="ourMoodIcon">
@@ -62,9 +61,9 @@
                   <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
                   {{friends[0].moodUsed}}
                 </p> 
-            </li>
-        
-        <li id={{friends[1].id}}>
+            </div>
+            <hr>
+       
             <img class="userIcon" ng-src="/{{friends[1].image}}"/ ng-click="toggle2()">
             <br>
             <div class="userLabel">{{friends[1].name}}</div>
@@ -87,12 +86,8 @@
                 {{friends[1].moodUsed}}
               </p> 
             </div>
-        </li>
-    
-
- 
-    
-        <li id={{friends[2].id}}>
+        <hr>
+     
             <img class="userIcon" ng-src="/{{friends[2].image}}"/ ng-click="toggle3()" >
             <br>
             <div class="userLabel">{{friends[2].name}}</div>
@@ -114,9 +109,8 @@
                 {{friends[2].moodUsed}}
               </p> 
             </div>
-        </li>
+        <hr>
 
-        <li id={{friends[3].id}}>
             <img class="userIcon" ng-src="/{{friends[3].image}}"/ ng-click="toggle4()">
             <br>
             <div class="userLabel">{{friends[3].name}}</div>
@@ -138,9 +132,8 @@
                 {{friends[3].moodUsed}}
               </p> 
             </div>
-        </li>
+        <hr>
     
-        <li id={{friends[4].id}}>
             <img class="userIcon" ng-src="/{{friends[4].image}}"/ ng-click="toggle5()" >
             <br>
             <div class="userLabel">{{friends[4].name}}</div>
@@ -162,9 +155,8 @@
                 {{friends[4].moodUsed}}
               </p> 
             </div>
-        </li>
+        <hr>
 
-        <li id={{friends[5].id}}>
             <img class="userIcon" ng-src="/{{friends[5].image}}"/ ng-click="toggle6()" >
             <br>
             <div class="userLabel">{{friends[5].name}}</div>
@@ -186,9 +178,7 @@
                 {{friends[5].moodUsed}}
               </p> 
             </div>
-        </li>
-      
-    </ul>
+        <hr>     
   </div>
 
   <!-- End of user's mood breakdown -->
