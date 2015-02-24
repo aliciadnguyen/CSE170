@@ -6,6 +6,8 @@ var router = express.Router();
 
 //var Theirmood = mongoose.model('Theirmood');
 var myEmotion = mongoose.model('myEmotion');
+var emoji = mongoose.model('emoji');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
@@ -74,5 +76,45 @@ router.post('/their-mood', function(req, res, next){
 		res.json(friend);
 	});
 });
+
+// Sorting page routers
+router.get('/sorting',function(req, res, next){
+
+	emoji.find(function (err, emojiList){
+		if (err){
+			return next(err);
+		}
+		res.json(emojiList);
+	});	
+});
+
+
+router.post('emoji',function(req, res, next){
+	var update = new emoji(req);
+	update.save(function (err, updateEmoji){
+		if(err){return next(err);}
+	});
+});
+
+// update emoji category
+router.put('/sorting/update',function(req, res, next){
+	
+	//console.log(req.body);
+	//console.log(req.body._id);
+	var newCategory = req.body.customCategory;
+	console.log(newCategory);
+	emoji.findByIdAndUpdate(req.body._id,{customCategory : newCategory},function (err,emoji){
+		if(err){
+			return next(err);
+		}
+		else{
+			//console.log("test");
+			console.log(emoji);
+			//res.location('index');
+			res.json(emoji);
+		}
+	});
+});
+
 
 module.exports = router;
