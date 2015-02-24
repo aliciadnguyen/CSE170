@@ -45,18 +45,31 @@
             <div class="userLabel">{{friends[0].name}}</div>
             <div class="moodBreakdown" ng-show="myVar">
                 <div class="moodLabel"><span>Mood Before</span></div>
-                <p class="ourMoodIcon">
+                <li class="ourMoodIcon">
+                  <b>Yours:</b>
                   <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
-                  {{friends[0].moodBefore}}
-                </p> 
+                  {{friends[0].yourMoodBefore}}
+                </li> 
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+                  {{friends[0].theirMoodBefore}}
+                </li> 
+
 
                 <div class="moodLabel"><span>Mood After</span></div>
-                <p class="ourMoodIcon">
-                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
-                  {{friends[0].moodAfter}}
-                </p>
+                <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+                  {{friends[0].yourMoodAfter}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+                  {{friends[0].theirMoodAfter}}
+                </li>
 
-                <div class="moodLabel"><span>Emoji Most Used</span></div>
+                <div class="moodLabel">Emojis Most Used<br><span>in Conversation</span></div>
                 <p class="ourMoodIcon">
                   <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
                   {{friends[0].moodUsed}}
@@ -70,17 +83,29 @@
             <div class="moodBreakdown" ng-show="myVar2">
               <br>
               <div class="moodLabel"><span>Mood Before</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[1].emoji[0].emoji3.imageSRC}}">
-                {{friends[1].moodBefore}}
-              </p>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+                  {{friends[1].yourMoodBefore}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+                  {{friends[1].theirMoodBefore}}
+                </li>
 
               <div class="moodLabel"><span>Mood After</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[1].emoji[0].emoji2.imageSRC}}">
-                {{friends[1].moodAfter}}
-              </p>
-              <div class="moodLabel"><span>Emoji Most Used</span></div>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+                  {{friends[1].yourMoodAfter}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+                  {{friends[1].theirMoodAfter}}
+                </li>
+              <div class="moodLabel">Emojis Most Used<br><span>in Conversation</span></div>
               <p class="ourMoodIcon">
                 <img class="ourMoodEmoji" ng-src="{{friends[1].emoji[0].emoji4.imageSRC}}">
                 {{friends[1].moodUsed}}
@@ -94,16 +119,28 @@
             <div class="moodBreakdown" ng-show="myVar3">
               <br>
               <div class="moodLabel"><span>Mood Before</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[2].emoji[0].emoji1.imageSRC}}">
-                {{friends[2].moodBefore}}
-              </p>  
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+                  {{friends[2].yourMoodBefore}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+                  {{friends[2].theirMoodBefore}}
+                </li> 
               <div class="moodLabel"><span>Mood After</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[2].emoji[0].emoji2.imageSRC}}">
-                {{friends[2].moodAfter}}
-              </p> 
-              <div class="moodLabel"><span>Emoji Most Used</span></div>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+                  {{friends[2].yourMoodAfter}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+                  {{friends[2].theirMoodAfter}}
+                </li>
+              <div class="moodLabel">Emojis Most Used<br><span>in Conversation</span></div>
               <p class="ourMoodIcon">
                 <img class="ourMoodEmoji" ng-src="{{friends[2].emoji[0].emoji4.imageSRC}}">
                 {{friends[2].moodUsed}}
@@ -117,16 +154,28 @@
             <div class="moodBreakdown" ng-show="myVar4">
               <br>
               <div class="moodLabel"><span>Mood Before</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[3].emoji[0].emoji4.imageSRC}}">
-                {{friends[3].moodBefore}}
-              </p>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+                  {{friends[3].yourMoodBefore}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+                  {{friends[3].theirMoodBefore}}
+                </li>
               <div class="moodLabel"><span>Mood After</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[3].emoji[0].emoji1.imageSRC}}">
-                 {{friends[3].moodAfter}}
-              </p>
-              <div class="moodLabel"><span>Emoji Most Used</span></div>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+                  {{friends[3].yourMoodAfter}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+                  {{friends[3].theirMoodAfter}}
+                </li>
+              <div class="moodLabel">Emojis Most Used<br><span>in Conversation</span></div>
               <p class="ourMoodIcon">
                 <img class="ourMoodEmoji" ng-src="{{friends[3].emoji[0].emoji3.imageSRC}}">
                 {{friends[3].moodUsed}}
@@ -140,16 +189,28 @@
             <div class="moodBreakdown" ng-show="myVar5">
               <br>
               <div class="moodLabel"><span>Mood Before</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[4].emoji[0].emoji1.imageSRC}}">
-                {{friends[4].moodBefore}}
-              </p>  
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+                  {{friends[4].yourMoodBefore}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+                  {{friends[4].theirMoodBefore}}
+                </li>  
               <div class="moodLabel"><span>Mood After</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[4].emoji[0].emoji2.imageSRC}}">
-                {{friends[4].moodAfter}}
-              </p> 
-              <div class="moodLabel"><span>Emoji Most Used</span></div>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+                  {{friends[4].yourMoodAfter}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+                  {{friends[4].theirMoodAfter}}
+                </li>
+              <div class="moodLabel">Emojis Most Used<br><span>in Conversation</span></div>
               <p class="ourMoodIcon">
                 <img class="ourMoodEmoji" ng-src="{{friends[4].emoji[0].emoji2.imageSRC}}">
                 {{friends[4].moodUsed}}
@@ -163,16 +224,28 @@
             <div class="moodBreakdown" ng-show="myVar6">
               <br>
               <div class="moodLabel"><span>Mood Before</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[5].emoji[0].emoji1.imageSRC}}">
-                {{friends[5].moodBefore}}
-              </p>  
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji2.imageSRC}}">
+                  {{friends[5].yourMoodBefore}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji1.imageSRC}}">
+                  {{friends[5].theirMoodBefore}}
+                </li>  
               <div class="moodLabel"><span>Mood After</span></div>
-              <p class="ourMoodIcon">
-                <img class="ourMoodEmoji" ng-src="{{friends[5].emoji[0].emoji3.imageSRC}}">
-                {{friends[5].moodAfter}}
-              </p> 
-              <div class="moodLabel"><span>Emoji Most Used</span></div>
+               <li class="ourMoodIcon">
+                  <b>Yours:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji4.imageSRC}}">
+                  {{friends[5].yourMoodAfter}}
+                </li>
+                <li class="ourMoodIcon">
+                  <b>Theirs:</b>
+                  <img class="ourMoodEmoji" ng-src="{{friends[0].emoji[0].emoji3.imageSRC}}">
+                  {{friends[5].theirMoodAfter}}
+                </li> 
+              <div class="moodLabel">Emojis Most Used<br><span>in Conversation</span></div>
               <p class="ourMoodIcon">
                 <img class="ourMoodEmoji" ng-src="{{friends[5].emoji[0].emoji2.imageSRC}}">
                 {{friends[5].moodUsed}}
