@@ -60,7 +60,12 @@
         .state('sorting', {
             url: '/sorting',
             templateUrl: 'sorting.html',
-            
+            controller:'SortingCtrl',
+            resolve:{
+              sortingPromise: ['emojiService', function(emojis) {
+                return emojis.getData();
+              }]
+            }       
         });
 
   }]);

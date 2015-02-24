@@ -50,12 +50,6 @@
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-<!--             <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Angry</a></li>
-            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Sad</a></li>
-            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Flirty</a></li>
-            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Silly</a></li>
-            <li class="textCenter" role="presentation"><a role="menuitem" tabindex="-1" href="#">Happy</a></li> -->
-
                       <!-- dynamic -->
             <li ng-repeat="category in list | unique: 'category'">
                 <a ng-click="$parent.current = category">{{category}}</a>

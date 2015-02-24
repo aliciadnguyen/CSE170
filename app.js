@@ -18,7 +18,7 @@ mongoose.connect(database_uri);
 
 require('./models/myEmotions');
 //require('./models/theirMoods');
-
+require('./models/emojis');
 
 var routes = require('./routes/index');
 //var users = require('./routes/users');
