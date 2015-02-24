@@ -28,6 +28,12 @@
         })
         
        
+        .state('about', {
+            url: '/about',
+            templateUrl: 'about.html',
+            
+        })
+
         .state('theirmood', {
             url: '/their-mood',
             templateUrl: 'their-mood.html',

@@ -9,7 +9,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand companylogo" ui-sref="mymood">Company Logo</a> 
+                <a class="navbar-brand" ui-sref="about"> <img class="companyLogo" src="/images/emojiLogo.png" alt="Emojilyze" ></a>  
 
             </div>   
             <!-- /.navbar-collapse -->
@@ -62,7 +62,7 @@
     <div class="userImage row" ng-repeat="friend in friends">
         <br>
         <hr>
-        <div class="col-md-4">
+        <div class="img-responsive">
             <img class="userIcon" ng-src="/{{friend.image}}"/>
                 <br>
                 <div class="userLabel">
@@ -70,7 +70,7 @@
                 </div>
         </div>
         <ul class="photo-grid">
-            <div class="col-xs-6 col-md-4">
+            <div class="img-responsive">
             <li>
                 <a href>
                     <figure>
@@ -91,7 +91,7 @@
                 </a>      
             </li>
         </div>
-        <div class="col-xs-6 col-md-4">
+        <div class="img-responsive">
             <li>
                 <a href>
                     <figure>

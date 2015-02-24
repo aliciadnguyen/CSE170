@@ -22,7 +22,7 @@
         //var color = d3.scale.category20b();
         
         var color = d3.scale.ordinal()
-                  .range(["#d62728","#e377c2","#1f77b4","#ff7f0e","#9467bd"])
+                  .range(["#990e11","#e99080","#264f7b","#ee9201","#F2E96F"])
 
 
         var svg = d3.select('#svgPie')
@@ -110,8 +110,8 @@
           });
     
           path.on('mousemove', function(d) {
-            toolTip.style('top', (d3.event.pageY - 110) + 'px')
-              .style('left', (d3.event.pageX - 110) + 'px');
+            toolTip.style('top', (d3.event.pageY - 200) + 'px')
+              .style('left', (d3.event.pageX - 100) + 'px');
           });
 
 

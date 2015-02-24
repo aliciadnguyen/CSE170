@@ -10,7 +10,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand companylogo" ui-sref="mymood">Company Logo</a> 
+                <a class="navbar-brand" ui-sref="about"> <img class="companyLogo" src="/images/emojiLogo.png" alt="Emojilyze" ></a>  
 
             </div>   
             <!-- /.navbar-collapse -->
@@ -32,21 +32,23 @@
       </div>
 
 
-      <p class="instructions"> Explore the graph to learn today's top 5 moods. </p>
+      <p class="instructions"> Explore the graph to learn <b>today's</b> top 5 moods. </p>
       <div id="svgPie"> 
         <d3-Circle></d3-Circle>
       </div>
     </div>
-      <div class = "graph-key-bar">
-        <p class="moodInstructions">
-          Click an emoji to update your current mood!
-        </p>
-      </div>
 
     <div ng-controller="mymoodCtrl">
+      <div class = "graph-key-bar">
+        <p class="moodInstructions">Double click an emoji to update your current mood!</p>
+      </div>
+
       <ul id="emojilist">
         <li ng-repeat= "mymood in mymoods">
           <img class="img-responsive project-image medium-emoji" ng-dblclick="open(size,mymood.name,mymood.imageSRC,mymood.defaultCategory)"ng-src="/{{mymood.imageSRC}}"/>
+          <div>{{mymood.defaultCategory}}</div>
+        </li>
+          
     <script type="text/ng-template" id="myModalContent.html">
         <div class="modal-header">
             <h3 class="modal-title">Adding Mood</h3>

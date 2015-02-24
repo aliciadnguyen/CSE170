@@ -151,7 +151,7 @@ angular.module('myApp.directives')
 			   .attr("height", function(d) {
 			   		return d * 4;
 			   })
-			   .attr("fill", "teal");
+			   .attr("fill", "#F2E96F");
 
 			svg.selectAll("text")
 			   .data(dataset)
@@ -244,7 +244,7 @@ angular.module('myApp.directives')
 			   .attr("height", function(d) {
 			   		return d * 4;
 			   })
-			   .attr("fill", "#5254a3");
+			   .attr("fill", "#264f7b");
 
 			svg.selectAll("text")
 			   .data(dataset)
