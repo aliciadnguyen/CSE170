@@ -45,6 +45,10 @@
       <ul id="emojilist">
         <li ng-repeat= "mymood in mymoods">
           <img class="img-responsive project-image medium-emoji" ng-dblclick="open(size,mymood.name,mymood.imageSRC,mymood.defaultCategory)"ng-src="/{{mymood.imageSRC}}"/>
+          <div>{{mymood.defaultCategory}}</div>
+        </li>
+          
+
     <script type="text/ng-template" id="myModalContent.html">
         <div class="modal-header">
             <h3 class="modal-title">Adding Mood</h3>
