@@ -20,7 +20,7 @@ ul li{
 
 #emojilist li
 {	
-	display: inline;
+	display: inline-block;
 }
 
 #emojilist{
@@ -194,9 +194,8 @@ li .project-image{
 .emoji1 {
 	height:75px;
 	width:75px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+  max-width: 100%;
+  display: inline-block;
 }
 
 .emojiLabel {
@@ -478,10 +477,8 @@ rect.disabled {
 }
  
 .photo-grid li {
-  border: 5px solid white;
   display: inline-block;
-  margin: 1em;
-  width: 289px;
+  width: 110px;
 }
  
 .photo-grid img {
@@ -576,22 +573,37 @@ rect.disabled {
 }
 
 .ourMoodEmoji {
-  height:75px;
-  width:75px;
+  height:60px;
+  width:60px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .moodLabel {
-  font-size: 20px;
-  text-decoration: bold;
-  text-align: right;
-  width: 250px;
+  border-bottom:1px solid #B8B8B8;
+  line-height:16px;
+  text-align:center;
 }
+
+.moodLabel span {
+  background:#FFF;
+  position:relative;
+  bottom:-8px; /* half of line-height */
+  padding:0 15px;
+ }
+
 
 .ourMoodIcon {
   width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  font-size: 15px;
+  padding-top: 10px;
+}
 }
 
 .btn {
