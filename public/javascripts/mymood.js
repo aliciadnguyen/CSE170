@@ -5,6 +5,7 @@
     
     $scope.mymoods = mmood.mymoods;
     
+    
 
 
     $scope.open = function (size,name,image,defaultCategory) {
@@ -90,6 +91,7 @@
     $scope.imageSRC = theimageSRC;
     $scope.defaultCategory =  thedefaultCategory;
     $scope.mymoods = thearray;
+    
 
     $scope.theupdate = function (){
       //call the update method inside factory
