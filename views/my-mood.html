@@ -44,7 +44,19 @@
     <div ng-controller="mymoodCtrl">
       <ul id="emojilist">
         <li ng-repeat= "mymood in mymoods">
-          <img class="img-responsive project-image medium-emoji" ng-click="theupdate(mymood.name)" ng-src="/{{mymood.imageSRC}}"/>
+          <img class="img-responsive project-image medium-emoji" ng-dblclick="open(size,mymood.name,mymood.imageSRC,mymood.defaultCategory)"ng-src="/{{mymood.imageSRC}}"/>
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Adding Mood</h3>
+        </div>
+        <div class="modal-body">
+          <p>You are currently setting your mood to {{defaultCategory}}<img class="img-responsive project-image medium-emoji" ng-src="/{{imageSRC}}" style="vertical-align:middle"/></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" input type="submit" ng-click="theupdate()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
       </ul>
     </div>
 
