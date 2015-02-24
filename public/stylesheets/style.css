@@ -574,11 +574,18 @@ rect.disabled {
 }
 
 .moodLabel {
-  font-size: 20px;
-  text-decoration: bold;
-  text-align: center;
-  max-width: 100%;
+  border-bottom:1px solid #B8B8B8;
+  line-height:16px;
+  text-align:center;
 }
+
+.moodLabel span {
+  background:#FFF;
+  position:relative;
+  bottom:-8px; /* half of line-height */
+  padding:0 15px;
+ }
+
 
 .ourMoodIcon {
   width: 150px;
@@ -587,6 +594,7 @@ rect.disabled {
   margin-right: auto;
   max-width: 100%;
   font-size: 15px;
+  padding-top: 10px;
 }
 }
 
