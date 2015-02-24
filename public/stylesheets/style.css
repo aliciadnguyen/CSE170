@@ -20,7 +20,7 @@ ul li{
 
 #emojilist li
 {	
-	display: inline;
+	display: inline-block;
 }
 
 #emojilist{
@@ -169,8 +169,8 @@ li .project-image{
 
 .userIcon
 {
-	height:200px;
-	width:200px;
+	height:150px;
+	width:150px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -184,11 +184,10 @@ li .project-image{
 }
 
 .emoji1 {
-	height:150px;
-	width:150px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
+	height:75px;
+	width:75px;
+  max-width: 100%;
+  display: inline-block;
 }
 
 .emojiLabel {
@@ -470,10 +469,8 @@ rect.disabled {
 }
  
 .photo-grid li {
-  border: 5px solid white;
   display: inline-block;
-  margin: 1em;
-  width: 289px;
+  width: 110px;
 }
  
 .photo-grid img {
@@ -486,13 +483,14 @@ rect.disabled {
 }
  
 .photo-grid figure {
-  height: 150px;
+  height: 75px;
   overflow: hidden;
   position: relative;
-  width: 150px;
+  width: 75px;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
   border-radius: 75px; 
+  vertical-align: middle;
 }
  
 .photo-grid figcaption {
@@ -512,11 +510,11 @@ rect.disabled {
 }
  
 .photo-grid figcaption p {
-  display: table-cell;
+  display: block;
   font-size: 3em;
   position: relative;
   top: 5px;
-  width: 289px;
+  width: 75px;
   vertical-align: middle;
 }
 
@@ -526,10 +524,10 @@ rect.disabled {
 
 .photo-grid figcaption p {
   display: table-cell;
-  font-size: 1.5em;
+  font-size: 15px;
   position: relative;
   top: -40px;
-  width: 289px;
+  width: 75px;
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
@@ -567,22 +565,37 @@ rect.disabled {
 }
 
 .ourMoodEmoji {
-  height:75px;
-  width:75px;
+  height:60px;
+  width:60px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .moodLabel {
-  font-size: 20px;
-  text-decoration: bold;
-  text-align: right;
-  width: 250px;
+  border-bottom:1px solid #B8B8B8;
+  line-height:16px;
+  text-align:center;
 }
+
+.moodLabel span {
+  background:#FFF;
+  position:relative;
+  bottom:-8px; /* half of line-height */
+  padding:0 15px;
+ }
+
 
 .ourMoodIcon {
   width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  font-size: 15px;
+  padding-top: 10px;
+}
 }
 
 .btn {
@@ -597,5 +610,12 @@ rect.disabled {
 .btn-default {
   background-color: #ffd031;
   border-color: #ffd031;
+}
+
+.emojiRow {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  vertical-align: middle;
 }
 

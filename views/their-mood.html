@@ -62,7 +62,7 @@
     <div class="userImage row" ng-repeat="friend in friends">
         <br>
         <hr>
-        <div class="col-md-4">
+        <div class="img-responsive">
             <img class="userIcon" ng-src="/{{friend.image}}"/>
                 <br>
                 <div class="userLabel">
@@ -70,6 +70,7 @@
                 </div>
         </div>
         <ul class="photo-grid">
+            <div class="img-responsive">
             <li>
                 <a href>
                     <figure>
@@ -89,6 +90,8 @@
                     </figure>  
                 </a>      
             </li>
+        </div>
+        <div class="img-responsive">
             <li>
                 <a href>
                     <figure>
@@ -107,6 +110,7 @@
                     </figure>  
                 </a>  
             </li>
+        </div>
         </ul>
     </div>
   </div>  
