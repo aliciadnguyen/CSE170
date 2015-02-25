@@ -34,8 +34,6 @@ router.post('my-mood',function(req, res, next){
 
 router.put('/my-mood/update',function(req, res, next){
 	
-	//console.log(req.body);
-	//console.log(req.body._id);
 	var number = req.body.timesUsed;
 	console.log(number);
 	myEmotion.findByIdAndUpdate(req.body._id,{timesUsed : number},function (err,mymood){
