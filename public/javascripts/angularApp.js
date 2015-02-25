@@ -28,6 +28,12 @@
         })
         
        
+        .state('about', {
+            url: '/about',
+            templateUrl: 'about.html',
+            
+        })
+
         .state('theirmood', {
             url: '/their-mood',
             templateUrl: 'their-mood.html',
@@ -54,7 +60,12 @@
         .state('sorting', {
             url: '/sorting',
             templateUrl: 'sorting.html',
-            
+            controller:'SortingCtrl',
+            resolve:{
+              sortingPromise: ['emojiService', function(emojis) {
+                return emojis.getData();
+              }]
+            }       
         });
 
   }]);

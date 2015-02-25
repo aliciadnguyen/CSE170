@@ -2,8 +2,10 @@
 	{
         "name": "Ayesha Mazumdar",
         "image": "images/ayeshaIcon.png",
-        "moodBefore": "Indifferent",
-        "moodAfter": "Happy",
+        "yourMoodBefore": "Indifferent",
+        "theirMoodBefore": "Happy",
+        "yourMoodAfter": "Angry",
+        "theirMoodAfter": "Flirty",
         "moodUsed" : "Flirty",
         "emoji": [
             {
@@ -33,8 +35,10 @@
 		{
 			"name": "Anh Tran",
 			"image": "images/anhIcon.png",
-			"moodBefore": "Happy",
-        	"moodAfter": "Indifferent",
+			"yourMoodBefore": "Happy",
+        	"theirMoodBefore": "Sad",
+        	"yourMoodAfter": "Angry",
+        	"theirMoodAfter": "Flirty",
         	"moodUsed" : "Silly",
 			"emoji": [
 				{
@@ -70,8 +74,10 @@
 		},{
 			"name": "Gio Wong",
 			"image": "images/gioIcon.png",
-			"moodBefore": "Exhausted",
-        	"moodAfter": "Silly",
+			"yourMoodBefore": "Angry",
+        	"theirMoodBefore": "Happy",
+        	"yourMoodAfter": "Flirty",
+        	"theirMoodAfter": "Sad",
         	"moodUsed" : "Angry",
 			"emoji": [
 				{
@@ -107,8 +113,10 @@
 		},{
 			"name": "Alicia Nguyen",
 			"image": "images/aliciaIcon.png",
-			"moodBefore": "Happy",
-        	"moodAfter": "Relaxed",
+			"yourMoodBefore": "Angry",
+        	"theirMoodBefore": "Happy",
+        	"yourMoodAfter": "Sad",
+        	"theirMoodAfter": "Flirty",
         	"moodUsed" : "Indifferent",
 			"emoji": [
 				{
@@ -144,8 +152,10 @@
 		},{
 			"name": "Jillian Banks",
 			"image": "images/banksIcon.png",
-			"moodBefore": "Angry",
-        	"moodAfter": "Sad",
+			"yourMoodBefore": "Happy",
+        	"theirMoodBefore": "Flirty",
+        	"yourMoodAfter": "Sad",
+        	"theirMoodAfter": "Angry",
         	"moodUsed" : "Sad",
 			"emoji": [
 				{
@@ -181,8 +191,10 @@
 		},{
 			"name": "Angus Stone",
 			"image": "images/angusIcon.png",
-			"moodBefore": "Happy",
-        	"moodAfter": "Silly",
+			"yourMoodBefore": "Happy",
+        	"theirMoodBefore": "Angry",
+        	"yourMoodAfter": "Flirty",
+        	"theirMoodAfter": "Sad",
         	"moodUsed" : "Flirty",
 			"emoji": [
 				{
