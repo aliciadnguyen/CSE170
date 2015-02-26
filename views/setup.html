@@ -29,38 +29,19 @@
   <div class="jumbotron text-center pageTitleBar">
     <h4>Setup</h4>
   </div>
-  <div class="instructions">
-       You can customize which mood each emoji correlates to by turning on custom categories and sorting the emojis. Or you can choose our default categories! 
-  </div>
+
   <!-- Standard Switch -->
   <div class="container setupContainer">
 
-     <form ng-controller="defaultSwitch" class="sliders">
-         <p class="sliderlabler">Use Default Categories</p> 
-        <div class="toggle-bg toggle-alternate {{switchAlternate}}">
-          <label class="{{switchAlternate}}">{{switchAlternate}}</label>
-          <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
-          <input type="radio" name="toggle" value="on" ng-model="switchAlternate">
-          <span class="switch {{switchAlternate}}"></span>
-        </div>          
-      </form>
-          
-      <!-- Alternative Switch -->
-          
-      <form ng-controller="customSwitch" class="sliders">
-          <p class="sliderlabler">Create Custom Categories</p>    
-        <div class="toggle-bg toggle-alternate {{switchAlternate}}">
-          <label class="{{switchAlternate}}">{{switchAlternate}}</label>
-          <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
-          <input type="radio" name="toggle" value="on" ng-model="switchAlternate">
-          <span class="switch {{switchAlternate}}"></span>
-        </div>       
-      </form>
+          <h4>Create Custom Categories</h4>    
+          <p> If you don't wish to customize the categories for each emoji, our default categories with automatically be used.</p>
 
-    <button class="btn btn-default sortingButton" type="button" ui-sref="sorting">Re-Sort Emojis</button>
+
+    <button class="btn btn-default sortingButton" type="button" ui-sref="sorting">Customize Emojis</button>
     
       <form ng-controller="privacySwitch" class="sliders privacySwitch">
-            <p class="sliderlabler">Privacy - Allow my friends to see my mood</p>         
+            <h4>Privacy</h4>  
+            <p> Allow my friends to see my mood </p>       
         <div class="toggle-bg toggle-alternate {{switchAlternate}}">
           <label class="{{switchAlternate}}">{{switchAlternate}}</label>
           <input type="radio" name="toggle" value="off" ng-model="switchAlternate">
