@@ -534,7 +534,7 @@ rect.disabled {
 
 .photo-grid figcaption p {
   display: table-cell;
-  font-size: 15px;
+  font-size: 25px;
   position: relative;
   top: -40px;
   width: 75px;
@@ -606,6 +606,7 @@ rect.disabled {
   font-size: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .btn {
@@ -645,3 +646,11 @@ rect.disabled {
 .pageTitleGreen {
   color: #6DC79F;
 }
+
+.categoryLabel {
+  text-align: left;
+  text-indent: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
