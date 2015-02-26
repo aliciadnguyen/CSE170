@@ -28,6 +28,10 @@
       $scope.toggle6 = function() {
         $scope.myVar6 = !$scope.myVar6;
       };
+
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
       
   }]);
 }());
