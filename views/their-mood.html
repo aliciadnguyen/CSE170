@@ -69,6 +69,7 @@
                 <div class="userLabel">
                     {{friend.name}}
                 </div>
+                <div class="moodLabel"><span>Top Four Moods</span></div>
         </div>
         <ul class="photo-grid">
             <div class="img-responsive">
@@ -115,47 +116,47 @@
 
     <!--View more emojis-->
     <div ng-controller="ourmoodCtrl">  
-        <button type="button" class="btn btn-lg btn-danger viewBtn" ng-click="toggle()">View More</button>
+        <button type="button" class="btn btn-lg btn-danger viewBtn" ng-click="toggle()">View Other Moods</button>
             <div class="moodBreakdown" ng-show="myVar">
                 <ul class="photo-grid">
                     <div class="img-responsive">
                         <li>
                             <a href>
                             <figure>
-                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji1.imageSRC}}">
-                                <figcaption><p>{{friend.emoji[0].emoji1.percentage}}</p></figcation>
+                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji5.imageSRC}}">
+                                <figcaption><p>{{friend.emoji[0].emoji5.percentage}}</p></figcation>
                             </figure>
                             </a>
-                            <div class="categoryLabel">{{friend.emoji[0].emoji1.category}}</div>
+                            <div class="categoryLabel">{{friend.emoji[0].emoji5.category}}</div>
                         </li>
                         <li>
                             <a href>
                             <figure>
-                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji2.imageSRC}}">
-                                <figcaption><p>{{friend.emoji[0].emoji2.percentage}}</p></figcation>
+                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji6.imageSRC}}">
+                                <figcaption><p>{{friend.emoji[0].emoji6.percentage}}</p></figcation>
                             </figure>  
                             </a>
-                            <div class="categoryLabel">{{friend.emoji[0].emoji2.category}}</div>      
+                            <div class="categoryLabel">{{friend.emoji[0].emoji6.category}}</div>      
                         </li>
                     </div>
                     <div class="img-responsive">
                         <li>
                             <a href>
                             <figure>
-                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji3.imageSRC}}">
-                            <figcaption><p>{{friend.emoji[0].emoji3.percentage}}</p></figcation>
+                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji7.imageSRC}}">
+                            <figcaption><p>{{friend.emoji[0].emoji7.percentage}}</p></figcation>
                             </figure>  
                              </a> 
-                            <div class="categoryLabel">{{friend.emoji[0].emoji3.category}}</div>     
+                            <div class="categoryLabel">{{friend.emoji[0].emoji7.category}}</div>     
                         </li>
                         <li>
                             <a href>
                             <figure>
-                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji4.imageSRC}}">
-                                <figcaption><p>{{friend.emoji[0].emoji4.percentage}}</p></figcation>
+                                <img class="emoji1" ng-src="{{friend.emoji[0].emoji8.imageSRC}}">
+                                <figcaption><p>{{friend.emoji[0].emoji8.percentage}}</p></figcation>
                             </figure>  
                             </a>
-                            <div class="categoryLabel">{{friend.emoji[0].emoji4.category}}</div>      
+                            <div class="categoryLabel">{{friend.emoji[0].emoji8.category}}</div>      
                         </li>
                     </div>
                 </ul>

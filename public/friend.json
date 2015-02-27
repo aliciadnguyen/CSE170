@@ -9,26 +9,54 @@
         "moodUsed" : "Flirty",
         "emoji": [
             {
-                "emoji1": {
-                    "category": "Angry",
-                    "imageSRC": "images/angry.png",
-                    "percentage": "25%"
-                },
-                "emoji2": {
-                    "category": "Happy",
-                    "imageSRC": "images/happywink.png",
-                    "percentage": "46%"
-                },
-                "emoji3": {
-                    "category": "Indifferent",
-                    "imageSRC": "images/sigh.png",
-                    "percentage": "9%"
-                },
-                "emoji4": {
-                    "category": "Flirty",
-                    "imageSRC": "images/smirk.png",
-                    "percentage": "20%"
-                }
+                "emoji1": 
+                	{
+                    	"category": "Angry",
+                    	"imageSRC": "images/angry.png",
+                    	"percentage": "25%"
+                	},
+                "emoji2": 
+                	{
+                    	"category": "Happy",
+                    	"imageSRC": "images/happywink.png",
+                    	"percentage": "46%"
+                	},
+                "emoji3": 
+                	{
+                    	"category": "Indifferent",
+                    	"imageSRC": "images/sigh.png",
+                    	"percentage": "9%"
+                	},
+                "emoji4": 
+                	{
+                    	"category": "Flirty",
+                    	"imageSRC": "images/smirk.png",
+                    	"percentage": "20%"
+                	}, 
+                "emoji5": 
+                	{
+                    	"category": "Silly",
+                    	"imageSRC": "images/bigEye.png",
+                    	"percentage": "15%"
+                	},
+                "emoji6": 
+                	{
+                    	"category": "Sad",
+                    	"imageSRC": "images/crying.png",
+                    	"percentage": "26%"
+                	},
+                "emoji7": 
+                	{
+                    	"category": "Flirty",
+                    	"imageSRC": "images/heartEyes.png",
+                    	"percentage": "8%"
+                	},
+                "emoji8": 
+                	{
+                    	"category": "Happy",
+                    	"imageSRC": "images/awkwardLaugh.png",
+                    	"percentage": "10%"
+                	}
             }
         ]
     },
@@ -47,28 +75,55 @@
 							"category": "Silly",
 							"imageSRC": "images/tongue.png",
 							"percentage": "40%"
-						}
-					,
+						},
 					"emoji2": 
 						{
 							"category": "Indifferent",
 							"imageSRC": "images/sigh.png",
 							"percentage": "4%"
-						}
-					,
+						},
 					"emoji3": 
 						{
 							"category": "Happy",
 							"imageSRC": "images/happywink.png",
 							"percentage": "38%"
-						}
-					,
+						},
 					"emoji4": 
 						{
 							"category": "Flirty",
 							"imageSRC": "images/heartEyes.png",
 							"percentage": "18%"
-						}
+						},
+					"emoji4": 
+						{
+                    		"category": "Silly",
+                    		"imageSRC": "images/crying.png",
+                    		"percentage": "20%"
+                		}, 
+                 	"emoji5": 
+                 		{
+                   	 		"category": "Silly",
+                    		"imageSRC": "images/shy.png",
+                    		"percentage": "23%"
+                		},
+                	"emoji6": 
+                		{
+                    		"category": "Flirty",
+                    		"imageSRC": "images/smirk.png",
+                    		"percentage": "14%"
+                		},
+                	"emoji7": 
+                		{
+                    		"category": "Worried",
+                    		"imageSRC": "images/worried.png",
+                    		"percentage": "23%"
+                		},
+                	"emoji8": 
+                		{
+                    		"category": "Happy",
+                    		"imageSRC": "images/awkwardLaugh.png",
+                    		"percentage": "13%"
+                		}	
 				}
 			]
 		},{
@@ -107,7 +162,31 @@
 							"category": "Angry",
 							"imageSRC": "images/angry.png",
 							"percentage": "26%"
-						}
+						},
+					"emoji5": 
+                 		{
+                   	 		"category": "Silly",
+                    		"imageSRC": "images/tongue.png",
+                    		"percentage": "15%"
+                		},
+                	"emoji6": 
+                		{
+                    		"category": "Silly",
+                    		"imageSRC": "images/teethEmoji.png",
+                    		"percentage": "21%"
+                		},
+                	"emoji7": 
+                		{
+                    		"category": "Sad",
+                    		"imageSRC": "images/sunglasses.png",
+                    		"percentage": "11%"
+                		},
+                	"emoji8": 
+                		{
+                    		"category": "Flirty",
+                    		"imageSRC": "images/kissy.png",
+                    		"percentage": "5%"
+                		}
 				}
 			]
 		},{
@@ -146,7 +225,31 @@
 							"category": "Happy",
 							"imageSRC": "images/awkwardLaugh.png",
 							"percentage": "19%"
-						}
+						},
+					"emoji5": 
+                 		{
+                   	 		"category": "Flirty",
+                    		"imageSRC": "images/heartEyes.png",
+                    		"percentage": "23%"
+                		},
+                	"emoji6": 
+                		{
+                    		"category": "Angry",
+                    		"imageSRC": "images/redFace.png",
+                    		"percentage": "14%"
+                		},
+                	"emoji7": 
+                		{
+                    		"category": "Sad",
+                    		"imageSRC": "images/bigEye.png",
+                    		"percentage": "23%"
+                		},
+                	"emoji8": 
+                		{
+                    		"category": "Sillu",
+                    		"imageSRC": "images/tongue2.png",
+                    		"percentage": "13%"
+                		}
 				}
 			]
 		},{
@@ -185,7 +288,31 @@
 							"category": "Mad",
 							"imageSRC": "images/angry.png",
 							"percentage": "33%"
-						}
+						},
+					"emoji5": 
+                 		{
+                   	 		"category": "Flirty",
+                    		"imageSRC": "images/kissy.png",
+                    		"percentage": "15%"
+                		},
+                	"emoji6": 
+                		{
+                    		"category": "Silly",
+                    		"imageSRC": "images/shy.png",
+                    		"percentage": "7%"
+                		},
+                	"emoji7": 
+                		{
+                    		"category": "Silly",
+                    		"imageSRC": "images/teethEmoji.png",
+                    		"percentage": "12%"
+                		},
+                	"emoji8": 
+                		{
+                    		"category": "Happy",
+                    		"imageSRC": "images/joy.png",
+                    		"percentage": "2%"
+                		}
 				}
 			]
 		},{
@@ -221,10 +348,34 @@
 					,
 					"emoji4": 
 						{
-							"category": "Happy",
-							"imageSRC": "images/happywink.png",
+							"category": "Angry",
+							"imageSRC": "images/redFace.png",
 							"percentage": "35%"
-						}
+						},
+					"emoji5": 
+                 		{
+                   	 		"category": "Worried",
+                    		"imageSRC": "images/sigh.png",
+                    		"percentage": "13%"
+                		},
+                	"emoji6": 
+                		{
+                    		"category": "Sad",
+                    		"imageSRC": "images/worried.png",
+                    		"percentage": "4%"
+                		},
+                	"emoji7": 
+                		{
+                    		"category": "Sad",
+                    		"imageSRC": "images/cry.png",
+                    		"percentage": "15%"
+                		},
+                	"emoji8": 
+                		{
+                    		"category": "Emotional",
+                    		"imageSRC": "images/crying.png",
+                    		"percentage": "22%"
+                		}
 				}
 			]
 		}
