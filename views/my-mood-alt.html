@@ -31,4 +31,83 @@
     <h4>My Mood Alternative</h4>
   </div>
 
+  <!--- my mood alternative changes -->            
+                <div class="progress-pie-chart" data-percent=""><!--Pie Chart -->
+                    <div class="ppc-progress">
+                        <div class="ppc-progress-fill"></div>
+                    </div>
+                    <div class="ppc-percents">
+                      <div class="pcc-percents-wrapper">
+                        <img class="emoji1" src="/images/heartEyes.png">
+                        <span>25%</span>  
+                      </div>
+                      
+                    </div>
+                </div>
+  <!--my mood alternative changes-->
+
+  <h4 class="textCenter"> Flirty </h4>
+
+  <!--- my mood alternative changes -->            
+                <div class="progress-pie-chart" data-percent=""><!--Pie Chart -->
+                    <div class="ppc-progress">
+                        <div class="ppc-progress-fill"></div>
+                    </div>
+                    <div class="ppc-percents">
+                      <div class="pcc-percents-wrapper">
+                        <img class="emoji1" src="/images/cry.png">
+                        <span>75%</span>  
+                      </div>
+                      
+                    </div>
+                </div>
+  <!--my mood alternative changes-->
+
+
+  <h4 class="textCenter"> Sad </h4>
+
+  <!--- my mood alternative changes -->            
+                <div class="progress-pie-chart" data-percent=""><!--Pie Chart -->
+                    <div class="ppc-progress">
+                        <div class="ppc-progress-fill"></div>
+                    </div>
+                    <div class="ppc-percents">
+                      <div class="pcc-percents-wrapper">
+                        <img class="emoji1" src="/images/angry.png">
+                        <span>35%</span>  
+                      </div>
+                      
+                    </div>
+                </div>
+  <!--my mood alternative changes-->
+
+
+  <h4 class="textCenter"> Angry </h4>
+
+   <div ng-controller="mymoodCtrl">
+      <div class = "graph-key-bar">
+        <p class="moodInstructions">Click an emoji to update your current mood!</p>
+      </div>
+
+      <ul id="emojilist">
+        <li ng-repeat= "mymood in mymoods">
+          <img class="img-responsive project-image medium-emoji" ng-click="open(size,mymood.name,mymood.imageSRC,mymood.defaultCategory)"ng-src="/{{mymood.imageSRC}}"/>
+          <div>{{mymood.defaultCategory}}</div>
+        </li>
+          
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Adding Mood</h3>
+        </div>
+        <div class="modal-body">
+          <p>You are currently setting your mood to {{defaultCategory}}<img class="img-responsive project-image medium-emoji" ng-src="/{{imageSRC}}" style="vertical-align:middle"/></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" input type="submit" ng-click="theupdate()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+      </ul>
+    </div>
+
   

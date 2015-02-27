@@ -56,6 +56,12 @@
             
         })
 
+        .state('mymoodalt', {
+           url: '/my-mood-alt',
+           templateUrl: 'my-mood-alt.html',
+           
+       })
+
         
         .state('sorting', {
             url: '/sorting',

@@ -1,4 +1,4 @@
-$(function(){
+(function(){
       var $ppc = $('.progress-pie-chart'),
         percent = parseInt($ppc.data('percent')),
         deg = 360*percent/100;
