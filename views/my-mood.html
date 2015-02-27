@@ -21,6 +21,8 @@
                 <li><a ui-sref="ourmood">Our Mood</a></li>
                 <li><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
                 <li><a ui-sref="setup">Setup</a></li>
+                <li><a ui-sref="mymoodalt">My Mood Alternative</a></li>
+
               </ul>
             </div>
         </div>
@@ -33,6 +35,23 @@
 
 
       <p class="instructions"> Explore the graph to learn <b>today's</b> top 5 moods. </p>
+      
+      
+<!--- my mood alternative changes -->            
+                <div class="progress-pie-chart" data-percent=""><!--Pie Chart -->
+                    <div class="ppc-progress">
+                        <div class="ppc-progress-fill"></div>
+                    </div>
+                    <div class="ppc-percents">
+                      <div class="pcc-percents-wrapper">
+                        <img class="emoji1" scr="angry.png">
+                        <span>25%</span>  
+                      </div>
+                      
+                    </div>
+                </div>
+  <!--my mood alternative changes-->
+             
       <div id="svgPie"> 
         <d3-Circle></d3-Circle>
       </div>
