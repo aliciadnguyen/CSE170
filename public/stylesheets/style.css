@@ -653,6 +653,7 @@ rect.disabled {
   text-indent: 15px;
   padding-bottom: 10px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 <!-----mood-alt page ----->
@@ -831,3 +832,8 @@ margin-bottom: 25px;
   margin: 50px auto 0;
 }
 
+.viewBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
