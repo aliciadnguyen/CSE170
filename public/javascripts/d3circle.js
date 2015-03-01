@@ -61,7 +61,7 @@
         d3.json('/my-mood', function(error, data) {
           data.forEach(function(d) {
             d.timesUsed = +d.timesUsed;
-            d.enabled = true;                                         // NEW
+            d.enabled = true;                                        // NEW
           });
           
           //function to sort arrays

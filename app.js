@@ -7,10 +7,10 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 
-var local_uri = 'mongodb://localhost/emojilyze'
+
 var MONGOLAB_URI =  'mongodb://gio:cowultra16@ds045531.mongolab.com:45531/heroku_app33588978'
 
-var database_uri = MONGOLAB_URI || local_uri
+var database_uri = MONGOLAB_URI
 
 mongoose.connect(database_uri);
 

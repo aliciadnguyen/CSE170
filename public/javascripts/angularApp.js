@@ -26,6 +26,21 @@
             }]
           }
         })
+
+
+
+        .state('mymoodalt', {
+           url: '/my-mood-alt',
+           templateUrl: 'my-mood-alt.html',
+           controller:'mymoodCtrl',
+           resolve:{
+             myMoodPromise: ['mmood',function (moods) {
+                  return moods.getAll();
+            }]
+           }
+           
+       })
+
         
        
         .state('about', {
@@ -55,14 +70,7 @@
             templateUrl: 'weekly-breakdown.html',
             
         })
-
-        .state('mymoodalt', {
-           url: '/my-mood-alt',
-           templateUrl: 'my-mood-alt.html',
-           
-       })
-
-        
+  
         .state('sorting', {
             url: '/sorting',
             templateUrl: 'sorting.html',
