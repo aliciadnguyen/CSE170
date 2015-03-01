@@ -27,9 +27,8 @@
         <!-- /.container -->
     </nav>
 
-  <div class="jumbotron text-center pageTitleBar">
-    <h4>My Mood Alternative</h4>
-  </div>
+   <div ng-controller="aboutCtrl">
+    <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
 
   <!--- my mood alternative changes -->            
               <div ng-controller="mymoodaltCtrl">
@@ -45,7 +44,7 @@
                     </div>
                 </div>
                 <h4 class="textCenter"> Flirty </h4>
-                <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 20 flirty emojis">I feel flirty.</button></p>
+                <p><button type="button" class="altBtn btn btn-lg btn-default" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 20 flirty emojis">I feel flirty.</button></p>
             
                 <div class="progress-pie-chart" data-percent="40"><!--Pie Chart -->
                     <div class="ppc-progress">
@@ -60,7 +59,7 @@
                     </div>
                 </div>
                 <h4 class="textCenter"> Sad </h4>
-                <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 15 sad emojis">I feel sad.</button></p>
+                <p><button type="button" class="altBtn btn btn-lg btn-default" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 15 sad emojis">I feel sad.</button></p>
       
                 <div class="progress-pie-chart" data-percent="55"><!--Pie Chart -->
                     <div class="ppc-progress">
@@ -74,7 +73,7 @@
                     </div>
                 </div>
                 <h4 class="textCenter"> Angry </h4>
-                <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 13 angry emojis">I feel angry.</button></p>
+                <p><button type="button" class="altBtn btn btn-lg btn-default" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 13 angry emojis">I feel angry.</button></p>
 
                  <div class="progress-pie-chart" data-percent="55"><!--Pie Chart -->
                     <div class="ppc-progress">
@@ -88,7 +87,7 @@
                     </div>
                 </div>
                 <h4 class="textCenter"> Happy </h4>
-                <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 25 happy emojis">I feel happy.</button></p>
+                <p><button type="button" class="altBtn btn btn-lg btn-default" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 25 happy emojis">I feel happy.</button></p>
 
                  <div class="progress-pie-chart" data-percent="55"><!--Pie Chart -->
                     <div class="ppc-progress">
@@ -102,7 +101,7 @@
                     </div>
                 </div>
                 <h4 class="textCenter"> Silly </h4>
-                <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 33 silly emojis">I feel silly.</button></p>
+                <p><button type="button" class="altBtn btn btn-lg btn-default" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used 33 silly emojis">I feel silly.</button></p>
               </div>  
               <!--end of pie charts-->
 

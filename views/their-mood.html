@@ -28,9 +28,8 @@
         <!-- /.container -->
     </nav>
 
-    <div class="jumbotron text-center pageTitleBar">
-    <h4>Their Mood</h4>
-    </div>
+    <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Showcases your friend's top 4 moods for the day so far. Click on emojis to see their respective percentages.">Their Mood</button></p>
+
     <br>
     <div class="topFour">
      Your friend's top four emojis: 
@@ -154,7 +153,7 @@
 
     <!--View more emojis-->
     <div ng-controller="ourmoodCtrl">  
-        <button type="button" class="btn btn-lg btn-danger viewBtn" ng-click="toggle()">View Other Moods</button>
+        <button type="button" class="btn btn-lg viewBtn btn-default" ng-click="toggle()">View Other Moods</button>
             <div class="moodBreakdown" ng-show="myVar">
                 <ul class="photo-grid">
                     <div class="img-responsive">

@@ -11,7 +11,7 @@
   angular.module('myApp.directives', ['d3']);
   angular.module('myApp.controllers',['ui.bootstrap','ui.router', 'ui.utils']).config(['$stateProvider','$urlRouterProvider','$locationProvider',function($stateProvider, $urlRouterProvider,$locationProvider){
 
-  	$urlRouterProvider.otherwise('/my-mood');
+  	$urlRouterProvider.otherwise('/about');
 
 
     $stateProvider
