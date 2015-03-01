@@ -16,6 +16,7 @@
 
       // Easy pie charts
       var $ppc = $('.progress-pie-chart'),
+      $ppc = $('.progress-pie-chart'),
         percent = parseInt($ppc.data('percent')),
         deg = 360*percent/100;
       if (percent > 50) {
