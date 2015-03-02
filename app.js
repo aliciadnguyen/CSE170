@@ -36,8 +36,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname + '/bower_components')));
+
+
+
 
 /*app.get('*', function(req, res) {
 res.sendFile('/views/index.ejs'); // load the single view file (angular will handle the page changes on the front-end

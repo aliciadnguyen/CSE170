@@ -9,7 +9,7 @@
   // setup dependency injection
   angular.module('d3', []);
   angular.module('myApp.directives', ['d3']);
-  angular.module('myApp.controllers',['ui.bootstrap','ui.router', 'ui.utils']).config(['$stateProvider','$urlRouterProvider','$locationProvider',function($stateProvider, $urlRouterProvider,$locationProvider){
+  angular.module('myApp.controllers',['ui.bootstrap','ui.router', 'ui.utils','easypiechart']).config(['$stateProvider','$urlRouterProvider','$locationProvider',function($stateProvider, $urlRouterProvider,$locationProvider){
 
   	$urlRouterProvider.otherwise('/about');
 

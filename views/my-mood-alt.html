@@ -32,80 +32,78 @@
 
   <!--- my mood alternative changes -->            
               <div ng-controller="mymoodaltCtrl">
-
-                <div class="progress-pie-chart" data-percent="percent1"><!--Pie Chart -->
-                    <div class="ppc-progress">
-                        <div class="ppc-progress-fill"></div>
-                    </div>
-                    <div class="ppc-percents">
+              <div class="progress-pie-chart">
+                  <span class="chart" easypiechart percent="percent1" options="options1"><!--Pie Chart -->
+                    <span class="percent" ng-bind="percent"></span>
+                  </span>
+                 <div class="ppc-percents">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/heartEyes.png">
-                        <span>{{result[1].timesUsed/total*100 | number:0}}%</span>  
-                      </div>
-                    </div>
-                </div>
+                        <span>{{result[1].timesUsed/total*100 | number:0}}%</span> 
+                       </div> 
+                </div>     
+              </div>
                 <h4 class="textCenter"> Flirty </h4>
 
                 <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[1].timesUsed}} flirty emojis">I feel flirty.</button></p>
-
-                <div class="progress-pie-chart" data-percent="percent2"><!--Pie Chart -->
-                    <div class="ppc-progress">
-                        <div class="ppc-progress-fill"></div>
-                    </div>
-                    <div class="ppc-percents">
+              
+              <div class="progress-pie-chart">
+                  <span class="chart" easypiechart percent="percent2" options="options2"><!--Pie Chart -->
+                    <span class="percent" ng-bind="percent"></span>
+                  </span>
+                 <div class="ppc-percents">
                       <div class="pcc-percents-wrapper">
-                        <img class="emoji1" src="/images/cry.png">
-                        <span>{{result[2].timesUsed/total*100 | number:0}}%</span>  
-                      </div>
-                      
-                    </div>
-                </div>
+                        <img class="emoji1" src="/images/crying.png">
+                        <span>{{result[2].timesUsed/total*100 | number:0}}%</span> 
+                       </div> 
+                 </div>     
+              </div>
                 <h4 class="textCenter"> Sad </h4>
 
                 <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[2].timesUsed}} sad emojis">I feel sad.</button></p>
 
       
-                <div class="progress-pie-chart" data-percent="percent3"><!--Pie Chart -->
-                    <div class="ppc-progress">
-                        <div class="ppc-progress-fill"></div>
-                    </div>
-                    <div class="ppc-percents">
+              <div class="progress-pie-chart">
+                  <span class="chart" easypiechart percent="percent3" options="options3"><!--Pie Chart -->
+                    <span class="percent" ng-bind="percent"></span>
+                  </span>
+                 <div class="ppc-percents">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/angry.png">
-                        <span>{{result[0].timesUsed/total*100 | number:0}}%</span>  
-                      </div>
-                    </div>
-                </div>
+                        <span>{{result[0].timesUsed/total*100 | number:0}}%</span> 
+                       </div> 
+                 </div>     
+              </div>
                 <h4 class="textCenter"> Angry </h4>
 
                 <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[0].timesUsed}} angry emojis">I feel angry.</button></p>
 
-                 <div class="progress-pie-chart" data-percent="percent4"><!--Pie Chart -->
-                    <div class="ppc-progress">
-                        <div class="ppc-progress-fill"></div>
-                    </div>
-                    <div class="ppc-percents">
+              <div class="progress-pie-chart">
+                  <span class="chart" easypiechart percent="percent4" options="options4"><!--Pie Chart -->
+                    <span class="percent" ng-bind="percent"></span>
+                  </span>
+                 <div class="ppc-percents">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/happywink.png">
-                        <span>{{result[4].timesUsed/total*100 | number:0}}%</span>  
-                      </div>
-                    </div>
-                </div>
+                        <span>{{result[4].timesUsed/total*100 | number:0}}%</span> 
+                       </div> 
+                 </div>     
+              </div>
                 <h4 class="textCenter"> Happy </h4>
 
                 <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[4].timesUsed}} happy emojis">I feel happy.</button></p>
 
-                 <div class="progress-pie-chart" data-percent="percent5"><!--Pie Chart -->
-                    <div class="ppc-progress">
-                        <div class="ppc-progress-fill"></div>
-                    </div>
-                    <div class="ppc-percents">
+              <div class="progress-pie-chart">
+                  <span class="chart" easypiechart percent="percent5" options="options5"><!--Pie Chart -->
+                    <span class="percent" ng-bind="percent"></span>
+                  </span>
+                 <div class="ppc-percents">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/tongue.png">
-                        <span>{{result[3].timesUsed/total*100 | number:0}}%</span>  
-                      </div>
-                    </div>
-                </div>
+                        <span>{{result[3].timesUsed/total*100 | number:0}}%</span> 
+                       </div> 
+                 </div>     
+              </div>
                 <h4 class="textCenter"> Silly </h4>
 
                 <p><button type="button" class="altBtn btn btn-lg btn-danger" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[3].timesUsed}} silly emojis">I feel silly.</button></p>

@@ -770,11 +770,15 @@ margin-bottom: 25px;
     display:inline-block;
 }
 /* Pie Chart */
+
+
+
+
 .progress-pie-chart {
   width:200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #E5E5E5;
+
   position: relative;
 }
 .progress-pie-chart.gt-50 {
