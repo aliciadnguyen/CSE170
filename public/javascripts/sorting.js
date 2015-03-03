@@ -28,6 +28,7 @@ angular.module('myApp.controllers').controller('SortingCtrl', ['$scope', '$http'
 
       $scope.list = $.merge(defaultArray, categoryArray);  
       $scope.initial = $scope.emojiArray[0]['customCategory'];
+      $scope.initialSrc = $scope.emojiArray[0]['imageSRC'];
       $(".categoryBtn:first-child").val($scope.initial);
   });
 
