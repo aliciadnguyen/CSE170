@@ -48,7 +48,7 @@
       <ul id="emojilist">
         <li ng-repeat= "mymood in mymoods">
           <img class="img-responsive project-image medium-emoji" ng-click="open(size,mymood.name,mymood.imageSRC,mymood.defaultCategory)"ng-src="/{{mymood.imageSRC}}"/>
-          <div>{{mymood.defaultCategory}}</div>
+          <div>{{mymood.customCategory}}</div>
         </li>
           
     <script type="text/ng-template" id="myModalContent.html">
@@ -56,7 +56,7 @@
             <h3 class="modal-title">Adding Mood</h3>
         </div>
         <div class="modal-body">
-          <p>You are currently setting your mood to {{defaultCategory}}<img class="img-responsive project-image medium-emoji" ng-src="/{{imageSRC}}" style="vertical-align:middle"/></p>
+          <p>You are currently setting your mood to {{customCategory}}<img class="img-responsive project-image medium-emoji" ng-src="/{{imageSRC}}" style="vertical-align:middle"/></p>
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" input type="submit" ng-click="theupdate()">OK</button>
