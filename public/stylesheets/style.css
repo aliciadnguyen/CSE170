@@ -878,3 +878,7 @@ margin-bottom: 25px;
   width: 25px;
   height: 25px;
 }
+
+.popover-content {
+  background-color: #d5e4dd;
+}
