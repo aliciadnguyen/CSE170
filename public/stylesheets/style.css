@@ -17,6 +17,11 @@ ul li{
   text-align: center;
 }
 
+.textCenterBold {
+  text-align: center;
+  font-weight: bold;
+}
+
 #emojilist li
 {	
 	display: inline-block;
@@ -867,4 +872,9 @@ margin-bottom: 25px;
 .well{
   font-size: 15px;
   background-color: #d5e4dd;
+}
+
+.wellEmoji {
+  width: 25px;
+  height: 25px;
 }
