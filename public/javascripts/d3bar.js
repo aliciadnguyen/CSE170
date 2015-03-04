@@ -95,6 +95,12 @@
 
         }
       };
+
+      // Pop up button
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    
     }]);
 
 
@@ -188,6 +194,12 @@ angular.module('myApp.directives')
 
         }
       };
+
+      // Pop up button
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+
     }]);
 
 
@@ -281,6 +293,12 @@ angular.module('myApp.directives')
 
         }
       };
+
+      // Pop up button
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+      
     }]);
 
 }());
