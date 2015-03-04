@@ -829,9 +829,9 @@ margin-bottom: 25px;
 }
 .ppc-percents span {
   display: block;
-  font-size: 2.6em;
+  font-size: 30px;
   font-weight: bold;
-  color: #81CE97;
+  color: #abcabc;
 }
 
 .pcc-percents-wrapper {
@@ -863,3 +863,33 @@ margin-bottom: 25px;
   background-color: #eee;
   font-size: 18px;
 }
+
+.flirtyColorFont {
+  color: #e99080;
+  font-size: 28px;
+}
+
+
+.sadColorFont {
+  color: #264f7b;
+  font-size: 28px;
+}
+
+
+.happyColorFont {
+  color: #F2E96F;
+  font-size: 28px;
+}
+
+
+.angryColorFont {
+  color: #990e11;
+  font-size: 28px;
+}
+
+
+.sillyColorFont {
+  color: #ee9201;
+  font-size: 28px;
+}
+
