@@ -2,7 +2,7 @@
   'use strict';
 
   angular.module('myApp.directives')
-    .directive('d3Circle', ['d3', function(d3) {
+    .directive('d3Circle', ['d3','$window',function(d3,$window) {
       return {
         restrict: 'EA',
         link: function(scope, iElement, iAttrs) {
@@ -137,7 +137,8 @@
             .style('fill', color)
             .style('stroke', color)                                   // UPDATED (removed semicolon)
             .on('click', function(label) {                            // NEW
-              var rect = d3.select(this);                             // NEW
+              var rect = d3.select(this);
+              $window.location="http://localhost:3000/#/weekly-breakdown";                             // NEW
               var enabled = true;                                     // NEW
               var totalEnabled = d3.sum(result.map(function(d) {     // NEW
                 return (d.enabled) ? 1 : 0;                           // NEW
