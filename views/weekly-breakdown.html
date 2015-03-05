@@ -34,11 +34,13 @@
         <h3> Your Emoji Use This Week</h3>
       </div>
 
+    
       <div id="weeklyChart" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <d3-Bar></d3-Bar>
 
        <div class="collapse" id="collapseExample">
-          <div class="well">
+          <div class="well" ng-controller="wbCtrl">
+              {{weeklybreakdown.topemoji_description}}
               At the beginning of the week, you don't use much emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overfilled with emojis. Must be a good sign! <br><br>
               <p class="textCenterBold">Top Emojis: </p>
               <p class="textCenter">
@@ -55,8 +57,10 @@
               </p>
           </div>
         </div>
-
       </div>
+    
+  </div>
+
 
 
 
