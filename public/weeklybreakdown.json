@@ -1,0 +1,98 @@
+[
+		{
+			"topemoji_description" : "At the beginning of the week, you don't use much emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overfilled with emojis. Must be a good sign!",
+			"topemoji": [
+				{	
+					"imageSRC": "/images/heartEyes.png",
+				},
+				{	
+					"imageSRC": "/images/angry.png",
+				},
+				{	
+					"imageSRC": "/images/bigEye.png",
+				},
+				{	
+					"imageSRC": "/images/closedeyes.png",
+				},
+				{	
+					"imageSRC": "/images/quivering.png",
+				},
+				{	
+					"imageSRC": "/images/openmouth.png",
+				},
+				{	
+					"imageSRC": "/images/kissy.png",
+				},
+				{	
+					"imageSRC": "/images/redFace.png",
+				},
+				{	
+					"imageSRC": "/images/joy.png",
+				}
+			]
+		},
+		{
+			"happyemoji_description" : "You seem to use much less happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week, your mood drastically changes to being very happy. I'm assuming you love these days :)",
+			"happyemoji": [
+				{	
+					"imageSRC": "/images/awkwardLaugh.png",
+				},
+				{	
+					"imageSRC": "/images/blush.png",
+				},
+				{	
+					"imageSRC": "/images/closedeyes.png",
+				},
+				{	
+					"imageSRC": "/images/joy.png",
+				},
+				{	
+					"imageSRC": "/images/openmouth.png",
+				},
+				{	
+					"imageSRC": "/images/shy.png",
+				},
+				{	
+					"imageSRC": "/images/tongue.png",
+				},
+				{	
+					"imageSRC": "/images/tongue2.png",
+				},
+				{	
+					"imageSRC": "/images/wideEyeTongue.png",
+				}
+			]
+		},
+		{
+			"sademoji_description" : "You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the least day for you to use sad emojis. Is this when you have more free time to relax?",
+			"sademoji": [
+				{	
+					"imageSRC": "/images/bigEye.png",
+				},
+				{	
+					"imageSRC": "/images/cry.png",
+				},
+				{	
+					"imageSRC": "/images/crying.png",
+				},
+				{	
+					"imageSRC": "/images/joy.png",
+				},
+				{	
+					"imageSRC": "/images/exhausted.png",
+				},
+				{	
+					"imageSRC": "/images/frowning.png",
+				},
+				{	
+					"imageSRC": "/images/gasp.png",
+				},
+				{	
+					"imageSRC": "/images/quivering.png",
+				},
+				{	
+					"imageSRC": "/images/sigh.png",
+				}
+			]
+		}
+	]
