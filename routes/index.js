@@ -42,7 +42,7 @@ router.put('/my-mood/update',function(req, res, next){
 	
 	var number = req.body.timesUsed;
 	console.log(number);
-	myEmotion.findByIdAndUpdate(req.body._id,{timesUsed : number},function (err,mymood){
+	myEmotion.findByIdAndUpdate(req.body._id,{timesUsed : number, mostRecent : 1},function (err,mymood){
 		if(err){
 			return next(err);
 		}
@@ -53,6 +53,23 @@ router.put('/my-mood/update',function(req, res, next){
 			res.json(mymood);
 		}
 	});
+
+});
+
+router.put('/my-mood/updateMostRecent',function(req, res, next){
+
+	myEmotion.findByIdAndUpdate(req.body._id,{mostRecent : 0},function (err,mymood){
+		if(err){
+			return next(err);
+		}
+		else{
+			//console.log("test");
+			console.log(mymood);
+			//res.location('index');
+			res.json(mymood);
+		}
+	});
+
 });
 
 

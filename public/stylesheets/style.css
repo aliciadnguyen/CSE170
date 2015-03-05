@@ -234,6 +234,13 @@ hr
   margin-top: 10px;
 }
 
+
+.latestMoodLabel {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
 ============================
 
 /* line 31, ../sass/style.scss */

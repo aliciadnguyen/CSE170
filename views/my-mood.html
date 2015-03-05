@@ -30,7 +30,7 @@
      <div ng-controller="aboutCtrl">
     <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
 
-      
+      <p class="latestMoodLabel">Latest Mood: <b>{{mostRecent['customCategory']}}</b> </p>
              
       <div class="mainMoodGraph" id="svgPie"> 
         <d3-Circle></d3-Circle>
@@ -39,7 +39,7 @@
 
     <div ng-controller="mymoodCtrl">
       <div class = "graph-key-bar">
-        <p class="moodInstructions">Click the graph above to learn more about <b>today's</b> top 5 moods or click an emoji below to update your current mood!</p>
+        <p class="moodInstructions">Click the graph above to learn more about <b>today's</b> top 5 moods or click an emoji below to update your current mood!</p> 
       </div>
 
       <ul id="emojilist">
