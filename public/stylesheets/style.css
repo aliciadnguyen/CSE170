@@ -17,6 +17,11 @@ ul li{
   text-align: center;
 }
 
+.textCenterBold {
+  text-align: center;
+  font-weight: bold;
+}
+
 #emojilist li
 {	
 	display: inline-block;
@@ -798,7 +803,7 @@ margin-bottom: 25px;
 .ppc-progress .ppc-progress-fill {
   content: "";
   position: absolute;
-  border-radius: 50%;
+  border-radius: 0%;
   left: calc(50% - 100px);
   top: calc(50% - 100px);
   width: 200px;
@@ -893,3 +898,16 @@ margin-bottom: 25px;
   font-size: 28px;
 }
 
+.well{
+  font-size: 15px;
+  background-color: #eaf1ee;
+}
+
+.wellEmoji {
+  width: 25px;
+  height: 25px;
+}
+
+.popover-content {
+  background-color: #eef4f1;
+}

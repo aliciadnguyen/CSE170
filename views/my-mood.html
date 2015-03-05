@@ -21,7 +21,6 @@
                 <li><a ui-sref="ourmood">Our Mood</a></li>
                 <li><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
                 <li><a ui-sref="setup">Setup</a></li>
-                <li><a ui-sref="mymoodalt">My Mood Alternative</a></li>
 
               </ul>
             </div>
@@ -31,23 +30,21 @@
      <div ng-controller="aboutCtrl">
     <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
 
-
-      <p class="instructions"> Click the graph to learn <b>today's</b> top 5 moods. </p>
       
              
-      <div id="svgPie"> 
+      <div class="mainMoodGraph" id="svgPie"> 
         <d3-Circle></d3-Circle>
       </div>
     </div>
 
     <div ng-controller="mymoodCtrl">
       <div class = "graph-key-bar">
-        <p class="moodInstructions">Click an emoji to update your current mood!</p>
+        <p class="moodInstructions">Click the graph above to learn more about <b>today's</b> top 5 moods or click an emoji below to update your current mood!</p>
       </div>
 
       <ul id="emojilist">
         <li ng-repeat= "mymood in mymoods">
-          <img class="img-responsive project-image medium-emoji" ng-click="open(size,mymood.name,mymood.imageSRC,mymood.defaultCategory)"ng-src="/{{mymood.imageSRC}}"/>
+          <img class="img-responsive project-image medium-emoji" ng-click="open(size,mymood.name,mymood.imageSRC,mymood.customCategory)"ng-src="/{{mymood.imageSRC}}"/>
           <div>{{mymood.customCategory}}</div>
         </li>
           

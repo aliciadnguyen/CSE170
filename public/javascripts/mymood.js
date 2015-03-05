@@ -5,12 +5,15 @@
     
     $scope.mymoods = mmood.mymoods;
     
-  
+  $(".mainMoodGraph").click(function(){
+    //add your Woopra tracking code for version A's like button click event
+    woopra.track("mymood_graph_click");
+  })
 
 
-    $scope.open = function (size,name,image,defaultCategory) {
+    $scope.open = function (size,name,image,customCategory) {
 
-      $scope.defaultCategory = defaultCategory; 
+      $scope.customCategory = customCategory; 
       $scope.name = name;
       $scope.imageSRC = image;
     var modalInstance = $modal.open({
@@ -24,8 +27,8 @@
           theimageSRC: function(){
             return $scope.imageSRC;
           },
-          thedefaultCategory: function(){
-            return $scope.defaultCategory;
+          thecustomCategory: function(){
+            return $scope.customCategory;
           },
           thearray:  function(){
             return $scope.mymoods;
@@ -85,11 +88,11 @@
 
 
 
-  angular.module('myApp.controllers').controller('moodModalCtrl', function ($scope, $modalInstance,thename,theimageSRC,thedefaultCategory,mmood,thearray,$window) {
+  angular.module('myApp.controllers').controller('moodModalCtrl', function ($scope, $modalInstance,thename,theimageSRC,thecustomCategory,mmood,thearray,$window) {
 
     $scope.name = thename;
     $scope.imageSRC = theimageSRC;
-    $scope.defaultCategory =  thedefaultCategory;
+    $scope.customCategory =  thecustomCategory;
     $scope.mymoods = thearray;
     
 

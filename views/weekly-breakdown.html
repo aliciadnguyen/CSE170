@@ -20,7 +20,6 @@
                 <li><a ui-sref="ourmood">Our Mood</a></li>
                 <li class="active"><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
                 <li><a ui-sref="setup">Setup</a></li>
-                <li><a ui-sref="mymoodalt">My Mood Alternative</a></li>
               </ul>
             </div>
         </div>
@@ -34,25 +33,78 @@
         <h3> Your Emoji Use This Week</h3>
       </div>
 
-      <div id="weeklyChart">
+      <div id="weeklyChart" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <d3-Bar></d3-Bar>
+
+       <div class="collapse" id="collapseExample">
+          <div class="well">
+              At the beginning of the week, you don't use much emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overfilled with emojis. Must be a good sign! <br><br>
+              <p class="textCenterBold">Top Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" src="/images/heartEyes.png">
+                <img class="wellEmoji" src="/images/angry.png">
+                <img class="wellEmoji" src="/images/bigEye.png">
+                <img class="wellEmoji" src="/images/closedeyes.png">
+                <img class="wellEmoji" src="/images/blush.png">
+                <img class="wellEmoji" src="/images/quivering.png">
+                <img class="wellEmoji" src="/images/openmouth.png">
+                <img class="wellEmoji" src="/images/kissy.png">
+                <img class="wellEmoji" src="/images/redFace.png">
+                <img class="wellEmoji" src="/images/joy.png">
+              </p>
+          </div>
+        </div>
+
       </div>
+
 
 
     <div class="graphName">
       <h3> Your Happiness Levels This Week </h3>
     </div>
 
-    <div id="happyChart">
-      
+    <div id="happyChart" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">  
+      <div class="collapse" id="collapseExample2">
+          <div class="well">
+              You seem to use much less happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week, your mood drastically changes to being very happy. I'm assuming you love these days :) <br><br>
+              <p class="textCenterBold">Top Happy Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" src="/images/awkwardLaugh.png">
+                <img class="wellEmoji" src="/images/blush.png">
+                <img class="wellEmoji" src="/images/closedeyes.png">
+                <img class="wellEmoji" src="/images/joy.png">
+                <img class="wellEmoji" src="/images/openmouth.png">
+                <img class="wellEmoji" src="/images/shy.png">
+                <img class="wellEmoji" src="/images/tongue.png">
+                <img class="wellEmoji" src="/images/tongue2.png">
+                <img class="wellEmoji" src="/images/wideEyeTongue.png">
+              </p>
+          </div>
+        </div>      
     </div>
 
 
     <div class="graphName">
       <h3> Your Sadness Levels This Week </h3>
     </div>
-    <div id="sadChart">
-     
+    <div id="sadChart" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"> 
+       <div class="collapse" id="collapseExample3">
+          <div class="well">
+            You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the least day for you to use sad emojis. Is this when you have more free time to relax? <br><br>
+            <p class="textCenterBold">Top Sad Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" src="/images/bigEye.png">
+                <img class="wellEmoji" src="/images/cry.png">
+                <img class="wellEmoji" src="/images/crying.png">
+                <img class="wellEmoji" src="/images/joy.png">
+                <img class="wellEmoji" src="/images/exhausted.png">
+                <img class="wellEmoji" src="/images/frowning.png">
+                <img class="wellEmoji" src="/images/gasp.png">
+                <img class="wellEmoji" src="/images/quivering.png">
+                <img class="wellEmoji" src="/images/sigh.png">
+              </p>
+          </div>
+        </div>
     </div>
 
     
