@@ -9,6 +9,11 @@
         $('[data-toggle="popover"]').popover()
       })
 
+      $http.get('weeklybreakdown.json')
+      .then(function(res){
+        $scope.weeklybreakdown = res.data;
+        console.log($scope.weeklybreakdown);
+      });
       
   }]);
 }());
