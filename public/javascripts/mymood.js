@@ -5,7 +5,10 @@
     
     $scope.mymoods = mmood.mymoods;
     
-  
+  $(".mainMoodGraph").click(function(){
+    //add your Woopra tracking code for version A's like button click event
+    woopra.track("mymood_graph_click");
+  })
 
 
     $scope.open = function (size,name,image,customCategory) {

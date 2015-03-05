@@ -20,7 +20,6 @@
                 <li><a ui-sref="ourmood">Our Mood</a></li>
                 <li class="active"><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
                 <li><a ui-sref="setup">Setup</a></li>
-                <li><a ui-sref="mymoodalt">My Mood Alternative</a></li>
               </ul>
             </div>
         </div>
@@ -39,9 +38,14 @@
         <d3-Bar></d3-Bar>
 
        <div class="collapse" id="collapseExample">
+<<<<<<< HEAD
           <div class="well" ng-controller="wbCtrl">
               {{weeklybreakdown.topemoji_description}}
               At the beginning of the week, you don't use much emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overfilled with emojis. Must be a good sign! <br><br>
+=======
+          <div class="well">
+              At the beginning of the week, you don't use many emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overflowing with emojis. Must be a good sign! <br><br>
+>>>>>>> 027e03ad78a0adb632f7bd2e4d301803e5662017
               <p class="textCenterBold">Top Emojis: </p>
               <p class="textCenter">
                 <img class="wellEmoji" src="/images/heartEyes.png">
@@ -62,8 +66,6 @@
   </div>
 
 
-
-
     <div class="graphName">
       <h3> Your Happiness Levels This Week </h3>
     </div>
@@ -71,7 +73,7 @@
     <div id="happyChart" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">  
       <div class="collapse" id="collapseExample2">
           <div class="well">
-              You seem to use much less happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week, your mood drastically changes to being very happy. I'm assuming you love these days :) <br><br>
+              You seem to use fewer happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week mark, your mood drastically changes to being very happy. I'm assuming you love these days :) <br><br>
               <p class="textCenterBold">Top Happy Emojis: </p>
               <p class="textCenter">
                 <img class="wellEmoji" src="/images/awkwardLaugh.png">
@@ -95,7 +97,7 @@
     <div id="sadChart" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"> 
        <div class="collapse" id="collapseExample3">
           <div class="well">
-            You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the least day for you to use sad emojis. Is this when you have more free time to relax? <br><br>
+            You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the day when you use the fewest sad emojis. Is this when you have more free time to relax? <br><br>
             <p class="textCenterBold">Top Sad Emojis: </p>
               <p class="textCenter">
                 <img class="wellEmoji" src="/images/bigEye.png">

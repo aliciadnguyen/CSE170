@@ -100,7 +100,7 @@
             }));
             var percent = Math.round(1000 * d.data.timesUsed / total) / 10;
             toolTip.select('.defaultCategory').html(d.data.defaultCategory);
-            toolTip.select('.timesUsed').html(d.data.timesUsed); 
+            toolTip.select('.timesUsed').html(d.data.timesUsed + " Emojis"); 
             toolTip.select('.percent').html(percent + '%'); 
             toolTip.style('display', 'block');
           });

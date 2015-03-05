@@ -15,12 +15,11 @@
             <!-- /.navbar-collapse -->
             <div class="navbar-collapse collapse"> 
               <ul class="nav navbar-nav navbar-left">
-                <li><a ui-sref="mymood">My Mood</a></li>
+                <li class="active"><a ui-sref="mymood">My Mood</a></li>
                 <li><a ui-sref="theirmood">Their Mood</a></li>
                 <li><a ui-sref="ourmood">Our Mood</a></li>
                 <li><a ui-sref="weeklybreakdown">Weekly Breakdown</a></li>
                 <li><a ui-sref="setup">Setup</a></li>
-                <li class="active"><a ui-sref="mymoodalt">My Mood Alternative</a></li>
               </ul>
             </div>
         </div>
@@ -30,46 +29,48 @@
    <div ng-controller="aboutCtrl">
     <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
 
+     <p class="instructions"> Click the graph's emoji to learn more about <b>today's</b> top 5 moods. </p>
+
   <!--- my mood alternative changes -->            
               <div ng-controller="mymoodaltCtrl">
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent1" options="options1"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
                   </span>
-                 <div class="ppc-percents">
+                 <div class="ppc-percents flirtyColor">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/heartEyes.png" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[1].timesUsed}} flirty emojis">
-                        <span>{{result[1].timesUsed/total*100 | number:0}}%</span> 
+                        <span>{{result[1].timesUsed/total*100 | number:1}}%</span> 
                        </div> 
                 </div>     
               </div>
-                <h4 class="textCenter"> Flirty </h4>
+                <h4 class="textCenter flirtyColorFont"> Flirty </h4>
               
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent2" options="options2"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
                   </span>
-                 <div class="ppc-percents">
+                 <div class="ppc-percents sadColor">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/crying.png" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[2].timesUsed}} sad emojis">
-                        <span>{{result[2].timesUsed/total*100 | number:0}}%</span> 
+                        <span>{{result[2].timesUsed/total*100 | number:1}}%</span> 
                        </div> 
                  </div>     
               </div>
-                <h4 class="textCenter"> Sad </h4>
+                <h4 class="textCenter sadColorFont"> Sad </h4>
       
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent3" options="options3"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
                   </span>
-                 <div class="ppc-percents">
+                 <div class="ppc-percents angryColor">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/angry.png" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[0].timesUsed}} angry emojis">
-                        <span>{{result[0].timesUsed/total*100 | number:0}}%</span> 
+                        <span>{{result[0].timesUsed/total*100 | number:1}}%</span> 
                        </div> 
                  </div>     
               </div>
-                <h4 class="textCenter"> Angry </h4>
+                <h4 class="textCenter angryColorFont"> Angry </h4>
 
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent4" options="options4"><!--Pie Chart -->
@@ -78,24 +79,24 @@
                  <div class="ppc-percents">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/happywink.png" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[4].timesUsed}} happy emojis">
-                        <span>{{result[4].timesUsed/total*100 | number:0}}%</span> 
+                        <span>{{result[4].timesUsed/total*100 | number:1}}%</span> 
                        </div> 
                  </div>     
               </div>
-                <h4 class="textCenter"> Happy </h4>
+                <h4 class="textCenter happyColorFont"> Happy </h4>
 
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent5" options="options5"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
                   </span>
-                 <div class="ppc-percents">
+                 <div class="ppc-percents sillyColor">
                       <div class="pcc-percents-wrapper">
                         <img class="emoji1" src="/images/tongue.png" data-toggle="popover" title="Emoji Statistics" data-placement="bottom" data-content="You used {{result[3].timesUsed}} silly emojis">
-                        <span>{{result[3].timesUsed/total*100 | number:0}}%</span> 
+                        <span>{{result[3].timesUsed/total*100 | number:1}}%</span> 
                        </div> 
                  </div>     
               </div>
-                <h4 class="textCenter"> Silly </h4>
+                <h4 class="textCenter sillyColorFont"> Silly </h4>
               </div>  
               <!--end of pie charts-->
 

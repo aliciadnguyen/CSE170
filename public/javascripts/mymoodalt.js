@@ -82,6 +82,11 @@
         $('[data-toggle="popover"]').popover()
       })
 
+      $(".emoji1").click(function(){
+        //add your Woopra tracking code for version A's like button click event
+        woopra.track("myaltmood_graph_clicked");
+      })
+
       
       // "#990e11","#e99080","#264f7b","#ee9201","#F2E96F"
 

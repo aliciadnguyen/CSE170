@@ -18,7 +18,7 @@
 
     	.state('mymood', {
             url: '/my-mood',
-            templateUrl: 'my-mood.html',
+            templateUrl: 'my-mood-alt.html',
             controller:'mymoodCtrl',
             resolve:{
               myMoodPromise: ['mmood',function (moods) {
@@ -26,6 +26,7 @@
             }]
           }
         })
+        
        
         .state('about', {
             url: '/about',
