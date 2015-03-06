@@ -28,7 +28,7 @@
     </nav>
 
     <div ng-controller="aboutCtrl">
-    <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Shows you how your moods change throughout the week. Do you use a lot happy emojis on Fridays? Lots of angry emojis on Mondays?">Weekly Breakdown</button></p>
+    <p><button type="button" class="altBtn btn btn-lg aboutButtonSmaller" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Shows you how your moods change throughout the week. Do you use a lot happy emojis on Fridays? Lots of angry emojis on Mondays?">Weekly Breakdown</button></p>
 
       <div class="graphName">
         <h3> Your Emoji Use This Week</h3>
@@ -61,6 +61,94 @@
     
   </div>
 
+    <div class="graphName">
+      <h3> Your Anger Levels This Week </h3>
+    </div>
+
+    <div ng-controller="aboutCtrl" id="angryChart" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">  
+      <div class="collapse" id="collapseExample4">
+          <div class="well">
+              {{weeklybreakdown[3].angryemoji_description}} <br><br>
+              <p class="textCenterBold">Top Angry Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[3].angryemoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[3].angryemoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[3].angryemoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[3].angryemoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[3].angryemoji[4].imageSRC}}">
+              </p>
+          </div>
+        </div>      
+    </div>
+
+
+    <div class="graphName">
+      <h3> Your Flirtation Levels This Week </h3>
+    </div>
+
+    <div ng-controller="aboutCtrl" id="flirtyChart" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">  
+      <div class="collapse" id="collapseExample6">
+          <div class="well">
+              {{weeklybreakdown[5].flirtyemoji_description}} <br><br>
+              <p class="textCenterBold">Top Happy Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[4].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[5].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[5].flirtyemoji[6].imageSRC}}">
+
+              </p>
+          </div>
+        </div>      
+    </div>
+
+    <div class="graphName">
+      <h3> Your Sadness Levels This Week </h3>
+    </div>
+    <div ng-controller="aboutCtrl" id="sadChart" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"> 
+       <div class="collapse" id="collapseExample3">
+          <div class="well">
+            {{weeklybreakdown[2].sademoji_description}}  <br><br>
+            <p class="textCenterBold">Top Sad Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[4].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[5].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[6].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[7].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[8].imageSRC}}">
+              </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="graphName">
+      <h3> Your Silliness Levels This Week </h3>
+    </div>
+
+    <div ng-controller="aboutCtrl" id="sillyChart" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">  
+      <div class="collapse" id="collapseExample5">
+          <div class="well">
+              {{weeklybreakdown[4].sillyemoji_description}} <br><br>
+              <p class="textCenterBold">Top Silly Emojis: </p>
+              <p class="textCenter">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[4].sillyemoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[4].sillyemoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[4].sillyemoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[4].sillyemoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[4].sillyemoji[4].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[4].sillyemoji[5].imageSRC}}">
+
+              </p>
+          </div>
+        </div>      
+    </div>
 
     <div class="graphName">
       <h3> Your Happiness Levels This Week </h3>
@@ -84,30 +172,6 @@
               </p>
           </div>
         </div>      
-    </div>
-
-
-    <div class="graphName">
-      <h3> Your Sadness Levels This Week </h3>
-    </div>
-    <div ng-controller="aboutCtrl" id="sadChart" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"> 
-       <div class="collapse" id="collapseExample3">
-          <div class="well">
-            {{weeklybreakdown[2].sademoji_description}}  <br><br>
-            <p class="textCenterBold">Top Sad Emojis: </p>
-              <p class="textCenter">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[0].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[1].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[2].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[3].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[4].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[5].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[6].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[7].imageSRC}}">
-                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[8].imageSRC}}">
-              </p>
-          </div>
-        </div>
     </div>
 
     

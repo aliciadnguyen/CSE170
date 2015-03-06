@@ -1,6 +1,6 @@
 [
 		{
-			"topemoji_description" : "At the beginning of the week, you don't use much emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overfilled with emojis. Must be a good sign!",
+			"topemoji_description" : "At the beginning of the week, you don't use many emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overflowing with emojis. Must be a good sign!",
 			"topemoji": [
 				{	
 					"imageSRC": "/images/heartEyes.png"
@@ -32,7 +32,7 @@
 			]
 		},
 		{
-			"happyemoji_description" : "You seem to use much less happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week, your mood drastically changes to being very happy. I'm assuming you love these days :)",
+			"happyemoji_description" : "You seem to use fewer happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week point, your mood drastically changes to being very happy. I'm assuming you love these days :)",
 			"happyemoji": [
 				{	
 					"imageSRC": "/images/awkwardLaugh.png"
@@ -64,7 +64,7 @@
 			]
 		},
 		{
-			"sademoji_description" : "You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the least day for you to use sad emojis. Is this when you have more free time to relax?",
+			"sademoji_description" : "You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the day you use the fewest sad emojis. Is this when you have more free time to relax?",
 			"sademoji": [
 				{	
 					"imageSRC": "/images/bigEye.png"
@@ -92,6 +92,75 @@
 				},
 				{	
 					"imageSRC": "/images/sigh.png"
+				}
+			]
+		},
+		{
+			"angryemoji_description" : "You seem to use angry emojis in the beginning of the week. Why is that? Does the start of the week stress you out? Don't fret! The weekend is on its way!",
+			"angryemoji": [
+				{	
+					"imageSRC": "/images/redFace.png"
+				},
+				{	
+					"imageSRC": "/images/sunglasses.png"
+				},
+				{	
+					"imageSRC": "/images/scruncheyes.png"
+				},
+				{	
+					"imageSRC": "/images/angry.png"
+				},
+				{	
+					"imageSRC": "/images/exhausted.png"
+				}
+			]
+		},
+		{
+			"sillyemoji_description" : "You tend to be extra silly mid-week. Hump day have you in good spirits? Mike The Camel says hi, btw.",
+			"sillyemoji": [
+				{	
+					"imageSRC": "/images/tongue2.png"
+				},
+				{	
+					"imageSRC": "/images/joy.png"
+				},
+				{	
+					"imageSRC": "/images/teethEmoji.png"
+				},
+				{	
+					"imageSRC": "/images/tongue.png"
+				},
+				{	
+					"imageSRC": "/images/wideEyeTongue.png"
+				},
+				{	
+					"imageSRC": "/images/closedeyes.png"
+				}
+			]
+		},
+		{
+			"flirtyemoji_description" : "You tend to use flirty emojis around the end of the week. With classes done, are you making plans for date night? Keep using those Heart Eyes and share the love.",
+			"flirtyemoji": [
+				{	
+					"imageSRC": "/images/kissy.png"
+				},
+				{	
+					"imageSRC": "/images/kissface.png"
+				},
+				{	
+					"imageSRC": "/images/tongue.png"
+				},
+				{	
+					"imageSRC": "/images/shy.png"
+				},
+				{	
+					"imageSRC": "/images/happywink.png"
+				},
+				{	
+					"imageSRC": "/images/heartEyes.png"
+				},
+				{	
+					"imageSRC": "/images/awkwardLaugh.png"
 				}
 			]
 		}

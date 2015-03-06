@@ -31,7 +31,13 @@
     <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
 
      <p class="instructions"> Click the graph's emoji to learn more about <b>today's</b> top 5 moods. </p><br/>
-     <p class="latestMoodLabel">Latest Mood: <b>{{mostRecent['customCategory']}}</b> </p>
+     
+     <div class="textCenter">
+        <p class="latestMoodLabel">Latest Mood:</p>
+        <div class="textCenter latestMoodDiv">
+          <p> <b class=" latestMoodLabel pageTitleGreen">{{mostRecent['customCategory']}}</b> </p>
+        </div>
+      </div>
 
 
   <!--- my mood alternative changes -->            
@@ -48,7 +54,7 @@
                 </div>     
               </div>
                 <h4 class="textCenter flirtyColorFont"> Flirty </h4>
-              
+              <hr>
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent2" options="options2"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
@@ -61,7 +67,7 @@
                  </div>     
               </div>
                 <h4 class="textCenter sadColorFont"> Sad </h4>
-      
+              <hr>
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent3" options="options3"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
@@ -74,7 +80,7 @@
                  </div>     
               </div>
                 <h4 class="textCenter angryColorFont"> Angry </h4>
-
+              <hr>
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent4" options="options4"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
@@ -87,7 +93,7 @@
                  </div>     
               </div>
                 <h4 class="textCenter happyColorFont"> Happy </h4>
-
+                <hr>
               <div class="progress-pie-chart">
                   <span class="chart" easypiechart percent="percent5" options="options5"><!--Pie Chart -->
                     <span class="percent" ng-bind="percent"></span>
@@ -102,7 +108,6 @@
                 <h4 class="textCenter sillyColorFont"> Silly </h4>
               </div>  
               <!--end of pie charts-->
-
    <div ng-controller="mymoodCtrl">
       <div class = "graph-key-bar">
         <p class="moodInstructions">Click an emoji to update your current mood!</p>

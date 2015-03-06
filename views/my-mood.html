@@ -29,9 +29,14 @@
         <!-- /.container -->
     </nav>
      <div ng-controller="aboutCtrl">
-    <p><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
+    <p class="textCenter"><button type="button" class="altBtn btn btn-lg aboutButton" data-toggle="popover" title="About This Page" data-placement="bottom" data-content="Allows you to see your top 5 moods for the day. Aced a test? Stepped in gum? Just click one of the emojis to update your current mood">Today's Mood</button></p>
 
-      <p class="latestMoodLabel">Latest Mood: <b>{{mostRecent['customCategory']}}</b> </p>
+      <div class="textCenter">
+        <p class="latestMoodLabel">Latest Mood:</p>
+        <div class="textCenter latestMoodDiv">
+          <p> <b class=" latestMoodLabel pageTitleGreen">{{mostRecent['customCategory']}}</b> </p>
+        </div>
+      </div>
              
       <div class="mainMoodGraph" id="svgPie"> 
         <d3-Circle></d3-Circle>

@@ -5,6 +5,11 @@ body{
   	padding-top: 70px;
 }
 
+@font-face{
+    font-family: "MANIFESTO";
+    src: url('MANIFESTO.ttf')
+}
+
 .arc path {
   stroke: #fff;
 }
@@ -15,6 +20,13 @@ ul li{
 
 .textCenter {
   text-align: center;
+}
+
+.textInnerCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .textCenterBold {
@@ -101,10 +113,13 @@ li .project-image{
 
 .pageTitle {
 	text-align: center;
+  font-family: 'MANIFESTO';
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .pageTitleBar {
-  padding: 10px;
+  padding: 5px;
 }
 
 .category-dropdown 
@@ -236,9 +251,14 @@ hr
 
 
 .latestMoodLabel {
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.latestMoodDiv {
+  display:inline-block;
 }
 
 ============================
@@ -658,6 +678,8 @@ rect.disabled {
 
 .pageTitleGreen {
   color: #abcabc;
+  font-family: 'MANIFESTO';
+  font-weight: bolder;
 }
 
 .aboutPageButton {
@@ -869,11 +891,20 @@ margin-bottom: 25px;
 
 .aboutButton {
   width: 100%;
-  height: 40px;
-  padding-left: 60px;
-  padding-right: 60px;
+  height: 50px;
+  background-color: #eee;
+  font-size: 22px;
+  font-family: 'MANIFESTO';
+  font-weight: bold;
+}
+
+.aboutButtonSmaller {
+  width: 100%;
+  height: 50px;
   background-color: #eee;
   font-size: 18px;
+  font-family: 'MANIFESTO';
+  font-weight: bold;
 }
 
 .flirtyColorFont {
