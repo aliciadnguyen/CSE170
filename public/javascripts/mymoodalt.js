@@ -6,6 +6,17 @@
 
       $scope.results = mmood.mymoods;
 
+      var recent; 
+      for(var i = 0; i < $scope.results.length; i++) {
+        var currEmoji = $scope.results[i];
+        if(currEmoji['mostRecent'] == 1) {
+          recent = currEmoji;
+        }
+      }
+
+      $scope.mostRecent = recent;
+      $scope.mostRecentName = $scope.mostRecent['name'];
+
       $scope.total = 0;
 
       $scope.results.forEach(function(d) {

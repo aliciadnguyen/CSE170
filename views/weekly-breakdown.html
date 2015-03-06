@@ -34,49 +34,53 @@
         <h3> Your Emoji Use This Week</h3>
       </div>
 
+    
       <div id="weeklyChart" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <d3-Bar></d3-Bar>
 
        <div class="collapse" id="collapseExample">
           <div class="well">
-              At the beginning of the week, you don't use many emojis. Are you busy? Stressed out? However, by the end of the week, your conversations seem to be overflowing with emojis. Must be a good sign! <br><br>
+              {{weeklybreakdown[0].topemoji_description}}
+          <br><br>
+
               <p class="textCenterBold">Top Emojis: </p>
               <p class="textCenter">
-                <img class="wellEmoji" src="/images/heartEyes.png">
-                <img class="wellEmoji" src="/images/angry.png">
-                <img class="wellEmoji" src="/images/bigEye.png">
-                <img class="wellEmoji" src="/images/closedeyes.png">
-                <img class="wellEmoji" src="/images/blush.png">
-                <img class="wellEmoji" src="/images/quivering.png">
-                <img class="wellEmoji" src="/images/openmouth.png">
-                <img class="wellEmoji" src="/images/kissy.png">
-                <img class="wellEmoji" src="/images/redFace.png">
-                <img class="wellEmoji" src="/images/joy.png">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[4].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[5].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[6].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[7].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[0].topemoji[8].imageSRC}}">
               </p>
           </div>
         </div>
-
       </div>
+    
+  </div>
+
 
     <div class="graphName">
       <h3> Your Happiness Levels This Week </h3>
     </div>
 
-    <div id="happyChart" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">  
+    <div ng-controller="aboutCtrl" id="happyChart" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">  
       <div class="collapse" id="collapseExample2">
           <div class="well">
-              You seem to use fewer happy emojis at the start of the week. Could it be that you are busy and stressed? However, after that mid-week mark, your mood drastically changes to being very happy. I'm assuming you love these days :) <br><br>
+              {{weeklybreakdown[1].happyemoji_description}} <br><br>
               <p class="textCenterBold">Top Happy Emojis: </p>
               <p class="textCenter">
-                <img class="wellEmoji" src="/images/awkwardLaugh.png">
-                <img class="wellEmoji" src="/images/blush.png">
-                <img class="wellEmoji" src="/images/closedeyes.png">
-                <img class="wellEmoji" src="/images/joy.png">
-                <img class="wellEmoji" src="/images/openmouth.png">
-                <img class="wellEmoji" src="/images/shy.png">
-                <img class="wellEmoji" src="/images/tongue.png">
-                <img class="wellEmoji" src="/images/tongue2.png">
-                <img class="wellEmoji" src="/images/wideEyeTongue.png">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[4].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[5].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[6].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[7].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[1].happyemoji[8].imageSRC}}">
               </p>
           </div>
         </div>      
@@ -86,21 +90,21 @@
     <div class="graphName">
       <h3> Your Sadness Levels This Week </h3>
     </div>
-    <div id="sadChart" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"> 
+    <div ng-controller="aboutCtrl" id="sadChart" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"> 
        <div class="collapse" id="collapseExample3">
           <div class="well">
-            You tend to use sad emojis on Mondays, Wednesdays, and Sundays. Why is that? Are these your busy days? However, Friday seems to be the day when you use the fewest sad emojis. Is this when you have more free time to relax? <br><br>
+            {{weeklybreakdown[2].sademoji_description}}  <br><br>
             <p class="textCenterBold">Top Sad Emojis: </p>
               <p class="textCenter">
-                <img class="wellEmoji" src="/images/bigEye.png">
-                <img class="wellEmoji" src="/images/cry.png">
-                <img class="wellEmoji" src="/images/crying.png">
-                <img class="wellEmoji" src="/images/joy.png">
-                <img class="wellEmoji" src="/images/exhausted.png">
-                <img class="wellEmoji" src="/images/frowning.png">
-                <img class="wellEmoji" src="/images/gasp.png">
-                <img class="wellEmoji" src="/images/quivering.png">
-                <img class="wellEmoji" src="/images/sigh.png">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[0].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[1].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[2].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[3].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[4].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[5].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[6].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[7].imageSRC}}">
+                <img class="wellEmoji" ng-src="{{weeklybreakdown[2].sademoji[8].imageSRC}}">
               </p>
           </div>
         </div>

@@ -5,7 +5,8 @@ var EmotionSchema = new mongoose.Schema({
 	defaultCategory: String,
 	customCategory: String,
 	imageSrc: String,
-	timesUsed: Number
+	timesUsed: Number,
+	mostRecent: Number
 });
 
 mongoose.model('myEmotion',EmotionSchema);
