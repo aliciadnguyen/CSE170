@@ -14,6 +14,10 @@
         }
       }
 
+      if(recent == null) {
+        recent = $scope.results[0];
+      }
+
       $scope.mostRecent = recent;
       $scope.mostRecentName = $scope.mostRecent['name'];
 
