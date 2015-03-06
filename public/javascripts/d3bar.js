@@ -56,9 +56,7 @@
 			   .attr("height", function(d) {
 			   		return d * 4;
 			   })
-			   .attr("fill", function(d) {
-					return "rgb(171, 202, " + (d * 10) + ")";
-			   });
+			   .attr("fill", "#abcabc");
 
 			svg.selectAll("text")
 			   .data(dataset)

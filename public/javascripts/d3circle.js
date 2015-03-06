@@ -138,7 +138,7 @@
             .style('stroke', color)                                   // UPDATED (removed semicolon)
             .on('click', function(label) {                            // NEW
               var rect = d3.select(this);
-              $window.location="http://localhost:3000/#/weekly-breakdown";                             // NEW
+              $window.location="http://emojilyze.herokuapp.com/#/weekly-breakdown";                             // NEW
               var enabled = true;                                     // NEW
               var totalEnabled = d3.sum(result.map(function(d) {     // NEW
                 return (d.enabled) ? 1 : 0;                           // NEW
