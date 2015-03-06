@@ -12,11 +12,7 @@ router.get('/', function(req, res, next) {
 
 var random_num = Math.random();
 
-  if(random_num > 0.5){
     res.render("index");
-  }else{
-    res.render("indexAlt");
-  }
 });
 
 router.get('/my-mood',function(req, res, next){
