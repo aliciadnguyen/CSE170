@@ -50,6 +50,7 @@ ul li{
   height: 100%;
   vertical-align: middle;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 li .project-image{
@@ -670,7 +671,7 @@ rect.disabled {
 #aboutPages li {
   background: url('../images/bulletEmoji.png');
   margin: 0;
-  padding: 4px 0 4px 55px;
+  padding: 4px 0 25px 55px;
   list-style: none;
   background-repeat: no-repeat;
   margin-bottom: 10px;
