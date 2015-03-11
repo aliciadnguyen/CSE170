@@ -63,7 +63,7 @@ angular.module('myApp.controllers').controller('SortingCtrl', ['$scope', '$http'
      $scope.custom = $('#customCategory').val();
 
     // //update current emoji category
-    if(!$scope.custom.replace(/^\s+/g, '').length) {
+    if(!$scope.custom.replace(/^\s+/g, '').replace(/"/g, '&quot;').replace(/'/g, '&apos;').length) {
       $scope.customCategory = $(".categoryBtn:first-child").val();
     }
     else {

@@ -7,7 +7,7 @@
         $scope.friends = res.data;
        
       });
-      $scope.myVar = false;
+      $scope.myVar = true;
 
       // Each user's toggle for mood breakdown
       $scope.toggle = function() {
