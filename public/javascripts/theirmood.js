@@ -9,6 +9,12 @@
         console.log($scope.friends[0].emoji[0].emoji1.imageSRC);
       });
 
+    $scope.myVar = false;
+
+      // Each user's toggle for mood breakdown
+    $scope.toggle = function() {
+        $scope.myVar = !$scope.myVar;
+      };
 
     $scope.open = function (size) {
 
